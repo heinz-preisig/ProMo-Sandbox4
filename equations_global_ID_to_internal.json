@@ -52,7 +52,7 @@
   "11": {
     "lhs": "fx_A_alpha",
     "network": "System",
-    "rhs": " F | A | ( K_A_alpha . D | N | pi_A_alpha )"
+    "rhs": " F | A | ( k_A_alpha . D | N | pi_A_alpha )"
   },
   "12": {
     "lhs": "fx_A_beta",
@@ -143,5 +143,10 @@
     "lhs": "dxy",
     "network": "System",
     "rhs": " MixedStack ( dx , dy )"
+  },
+  "35": {
+    "lhs": "k_A_alpha",
+    "network": "Properties >>> System",
+    "rhs": " K_A_alpha"
   }
 }

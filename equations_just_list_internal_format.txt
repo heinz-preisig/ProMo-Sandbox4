@@ -8,7 +8,7 @@
 8 :: pi_A_beta =  M_A_beta . x
 9 :: pi_B_gamma =  M_B_gamma . y
 10 :: pi_B_delta =  M_B_delta . y
-11 :: fx_A_alpha =  F | A | ( K_A_alpha . D | N | pi_A_alpha )
+11 :: fx_A_alpha =  F | A | ( k_A_alpha . D | N | pi_A_alpha )
 12 :: fx_A_beta =  F | A | ( K_A_beta . D | N | pi_A_beta )
 14 :: fy_B_gamma =  F | A | ( K_B_gamma . D | N | pi_B_gamma )
 15 :: fy_B_delta =  F | A | ( K_B_delta . D | N | pi_B_delta )
@@ -27,3 +27,4 @@
 32 :: dx =  Instantiate ( dx , null )
 33 :: dy =  Instantiate ( dy , null )
 34 :: dxy =  MixedStack ( dx , dy )
+35 :: k_A_alpha =  K_A_alpha

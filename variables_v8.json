@@ -280,7 +280,7 @@
     "25": {
       "aliases": "{'global_ID': ' V_25', 'python': 'fx_A_alpha', 'cpp': 'fx_A_alpha', 'matlab': 'fx_A_alpha', 'latex': '{\\\\hat{x}^{A,\\\\alpha}}', 'internal_code': 'fx_A_alpha'}",
       "doc": "netflow of token A due to mechanism alpha",
-      "equations": "{11: {'rhs': ' V_8  O_5  I_2 O_5  D_0 V_13 O_4 V_36  O_5  I_1 O_5  V_21 D_1', 'type': 'generic', 'doc': 'netflow of token A due to mechanism alpha', 'network': 'System', 'incidence_list': ['13', '21', '36', '8']}}",
+      "equations": "{11: {'rhs': ' V_8  O_5  I_2 O_5  D_0 V_41 O_4 V_36  O_5  I_1 O_5  V_21 D_1', 'type': 'generic', 'doc': 'netflow of token A due to mechanism alpha', 'network': 'System', 'incidence_list': ['21', '36', '41', '8']}}",
       "index_structures": "[1]",
       "label": "fx_A_alpha",
       "network": "System",
@@ -420,6 +420,66 @@
       "tokens": "[]",
       "type": "differenceOperator",
       "units": "[0, 0, 0, 0, 0, 0, 0, 0]"
+    },
+    "37": {
+      "aliases": "{'global_ID': ' V_37', 'python': 'K_A_alpha', 'cpp': 'K_A_alpha', 'matlab': 'K_A_alpha', 'latex': 'K_A_alpha', 'internal_code': 'K_A_alpha'}",
+      "doc": "conductivity token A mechanism alpha",
+      "equations": "{}",
+      "index_structures": "[2]",
+      "label": "K_A_alpha",
+      "network": "Properties",
+      "port_variable": "True",
+      "tokens": "[]",
+      "type": "constant",
+      "units": "[-1, 0, 0, 0, 0, 0, 0, 0]"
+    },
+    "38": {
+      "aliases": "{'global_ID': ' V_38', 'python': 'K_A_beta', 'cpp': 'K_A_beta', 'matlab': 'K_A_beta', 'latex': 'K_A_beta', 'internal_code': 'K_A_beta'}",
+      "doc": "conductivity token A mechanism beta",
+      "equations": "{}",
+      "index_structures": "[2]",
+      "label": "K_A_beta",
+      "network": "Properties",
+      "port_variable": "True",
+      "tokens": "[]",
+      "type": "constant",
+      "units": "[-1, 0, 0, 0, 0, 0, 0, 0]"
+    },
+    "39": {
+      "aliases": "{'global_ID': ' V_39', 'python': 'K_B_gamma', 'cpp': 'K_B_gamma', 'matlab': 'K_B_gamma', 'latex': 'K_B_gamma', 'internal_code': 'K_B_gamma'}",
+      "doc": "conductivity token B mechanism gamma",
+      "equations": "{}",
+      "index_structures": "[2]",
+      "label": "K_B_gamma",
+      "network": "Properties",
+      "port_variable": "True",
+      "tokens": "[]",
+      "type": "constant",
+      "units": "[-1, 0, 0, 0, 0, 0, 0, 0]"
+    },
+    "40": {
+      "aliases": "{'global_ID': ' V_40', 'python': 'K_B_delta', 'cpp': 'K_B_delta', 'matlab': 'K_B_delta', 'latex': 'K_B_delta', 'internal_code': 'K_B_delta'}",
+      "doc": "conductivity token B mechanism delta",
+      "equations": "{}",
+      "index_structures": "[2]",
+      "label": "K_B_delta",
+      "network": "Properties",
+      "port_variable": "True",
+      "tokens": "[]",
+      "type": "constant",
+      "units": "[-1, 0, 0, 0, 0, 0, 0, 0]"
+    },
+    "41": {
+      "aliases": "{'global_ID': ' V_41', 'python': 'k_A_alpha', 'cpp': 'k_A_alpha', 'matlab': 'k_A_alpha', 'latex': 'k_A_alpha', 'internal_code': 'k_A_alpha'}",
+      "doc": "link",
+      "equations": "{35: {'rhs': ' V_37', 'type': 'generic', 'doc': 'var doc : link', 'network': 'Properties >>> System', 'incidence_list': ['37']}}",
+      "index_structures": "[2]",
+      "label": "k_A_alpha",
+      "network": "Properties >>> System",
+      "port_variable": "False",
+      "tokens": "[]",
+      "type": "transform",
+      "units": "[-1, 0, 0, 0, 0, 0, 0, 0]"
     }
   },
   "indices": {
@@ -629,7 +689,7 @@
     }
   },
   "Ontology_global_IDs": {
-    "variable": 36,
-    "equation": 34
+    "variable": 41,
+    "equation": 35
   }
 }

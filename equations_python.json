@@ -63,7 +63,7 @@
     "variable_ID": 25,
     "lhs": "fx_A_alpha",
     "network": "System",
-    "rhs": "np.dot(F, (np.dot(np.transpose(np.multiply(np.transpose(K_A_alpha), D)), pi_A_alpha)))"
+    "rhs": "np.dot(F, (np.dot(np.transpose(np.multiply(np.transpose(k_A_alpha), D)), pi_A_alpha)))"
   },
   "12": {
     "variable_ID": 26,
@@ -172,5 +172,11 @@
     "lhs": "dxy",
     "network": "System",
     "rhs": "MixedStack(dx,dy)"
+  },
+  "35": {
+    "variable_ID": 41,
+    "lhs": "k_A_alpha",
+    "network": "Properties >>> System",
+    "rhs": "K_A_alpha"
   }
 }

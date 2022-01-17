@@ -63,7 +63,7 @@
     "variable_ID": 25,
     "lhs": "{{\\hat{x}^{A,\\alpha}}}{_{N}}",
     "network": "System",
-    "rhs": "{F}{_{N, A}} \\stackrel{A}{\\,\\star\\,} \\left({{K^{A,\\alpha}}}{_{A}} \\, . \\, {D}{_{N, A}} \\stackrel{N}{\\,\\star\\,} {{\\pi^{A,\\alpha}}}{_{N}}\\right)"
+    "rhs": "{F}{_{N, A}} \\stackrel{A}{\\,\\star\\,} \\left({k_A_alpha}{_{A}} \\, . \\, {D}{_{N, A}} \\stackrel{N}{\\,\\star\\,} {{\\pi^{A,\\alpha}}}{_{N}}\\right)"
   },
   "12": {
     "variable_ID": 26,
@@ -172,5 +172,11 @@
     "lhs": "{dxy}{_{}}",
     "network": "System",
     "rhs": "\\text{MixedStack}\\left( {{\\dot{x}}}{_{N}},{{\\dot{y}}}{_{N}} \\right)"
+  },
+  "35": {
+    "variable_ID": 41,
+    "lhs": "{k_A_alpha}{_{A}}",
+    "network": "Properties >>> System",
+    "rhs": "{K_A_alpha}{_{A}}"
   }
 }

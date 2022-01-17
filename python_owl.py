@@ -45,7 +45,7 @@ from Common.ontology_container import OntologyContainer
 
 from owlready2 import *
 
-ontology = OntologyContainer("ProMo_sandbox2") #'flash_03')
+ontology = OntologyContainer("ProMo_sandbox4") #'flash_03')
 
 
 variables = ontology.variables
@@ -846,6 +846,116 @@ V_36.temperature = [ units[4] ]
 V_36.current = [ units[5] ]
 V_36.light = [ units[6] ]
 
+# 37
+label = variables[37]["label"]
+network = variables[37]["network"]
+variable_type = variables[37]["type"]
+label = variables[37]["label"]
+doc = variables[37]["doc"]
+onto_ID = "V_37"
+V_37 = onto.ProMoVar( onto_ID )
+V_37.label = label
+V_37.network = network
+V_37.variable_type = variable_type
+V_37.comment = doc
+
+units = variables[37]["units"].asList()
+V_37.time = [ units[0] ]
+V_37.length = [ units[1] ]
+V_37.amount = [ units[2] ]
+V_37.mass = [ units[3] ]
+V_37.temperature = [ units[4] ]
+V_37.current = [ units[5] ]
+V_37.light = [ units[6] ]
+
+# 38
+label = variables[38]["label"]
+network = variables[38]["network"]
+variable_type = variables[38]["type"]
+label = variables[38]["label"]
+doc = variables[38]["doc"]
+onto_ID = "V_38"
+V_38 = onto.ProMoVar( onto_ID )
+V_38.label = label
+V_38.network = network
+V_38.variable_type = variable_type
+V_38.comment = doc
+
+units = variables[38]["units"].asList()
+V_38.time = [ units[0] ]
+V_38.length = [ units[1] ]
+V_38.amount = [ units[2] ]
+V_38.mass = [ units[3] ]
+V_38.temperature = [ units[4] ]
+V_38.current = [ units[5] ]
+V_38.light = [ units[6] ]
+
+# 39
+label = variables[39]["label"]
+network = variables[39]["network"]
+variable_type = variables[39]["type"]
+label = variables[39]["label"]
+doc = variables[39]["doc"]
+onto_ID = "V_39"
+V_39 = onto.ProMoVar( onto_ID )
+V_39.label = label
+V_39.network = network
+V_39.variable_type = variable_type
+V_39.comment = doc
+
+units = variables[39]["units"].asList()
+V_39.time = [ units[0] ]
+V_39.length = [ units[1] ]
+V_39.amount = [ units[2] ]
+V_39.mass = [ units[3] ]
+V_39.temperature = [ units[4] ]
+V_39.current = [ units[5] ]
+V_39.light = [ units[6] ]
+
+# 40
+label = variables[40]["label"]
+network = variables[40]["network"]
+variable_type = variables[40]["type"]
+label = variables[40]["label"]
+doc = variables[40]["doc"]
+onto_ID = "V_40"
+V_40 = onto.ProMoVar( onto_ID )
+V_40.label = label
+V_40.network = network
+V_40.variable_type = variable_type
+V_40.comment = doc
+
+units = variables[40]["units"].asList()
+V_40.time = [ units[0] ]
+V_40.length = [ units[1] ]
+V_40.amount = [ units[2] ]
+V_40.mass = [ units[3] ]
+V_40.temperature = [ units[4] ]
+V_40.current = [ units[5] ]
+V_40.light = [ units[6] ]
+
+# 41
+label = variables[41]["label"]
+network = variables[41]["network"]
+variable_type = variables[41]["type"]
+label = variables[41]["label"]
+doc = variables[41]["doc"]
+onto_ID = "V_41"
+V_41 = onto.ProMoVar( onto_ID )
+V_41.label = label
+V_41.network = network
+V_41.variable_type = variable_type
+V_41.comment = doc
+
+units = variables[41]["units"].asList()
+V_41.time = [ units[0] ]
+V_41.length = [ units[1] ]
+V_41.amount = [ units[2] ]
+V_41.mass = [ units[3] ]
+V_41.temperature = [ units[4] ]
+V_41.current = [ units[5] ]
+V_41.light = [ units[6] ]
+
 # functions assignments
 
 #1
@@ -1040,7 +1150,7 @@ V_24.has_function.append( F_30 )
 V_25.has_function = []
 incidence_list = []
 incidence_list.append( V_8 )
-incidence_list.append( V_13 )
+incidence_list.append( V_41 )
 incidence_list.append( V_36 )
 incidence_list.append( V_21 )
 F_ID = "F_11"
@@ -1170,5 +1280,26 @@ V_35.has_function.append( F_34 )
 #36
 
 V_36.has_function = []
+#37
+
+V_37.has_function = []
+#38
+
+V_38.has_function = []
+#39
+
+V_39.has_function = []
+#40
+
+V_40.has_function = []
+#41
+
+V_41.has_function = []
+incidence_list = []
+incidence_list.append( V_37 )
+F_ID = "F_35"
+F_35 = onto.function( F_ID )
+F_35.is_function_of = incidence_list
+V_41.has_function.append( F_35 )
 
 onto.save("variables.owl")

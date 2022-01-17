@@ -63,7 +63,7 @@
     "variable_ID": 25,
     "lhs": " V_25",
     "network": "System",
-    "rhs": " V_8  O_5  I_2 O_5  D_0 V_13 O_4 V_36  O_5  I_1 O_5  V_21 D_1"
+    "rhs": " V_8  O_5  I_2 O_5  D_0 V_41 O_4 V_36  O_5  I_1 O_5  V_21 D_1"
   },
   "12": {
     "variable_ID": 26,
@@ -172,5 +172,11 @@
     "lhs": " V_35",
     "network": "System",
     "rhs": " F_19 D_0 V_29 D_7 V_30 D_1"
+  },
+  "35": {
+    "variable_ID": 41,
+    "lhs": " V_41",
+    "network": "Properties >>> System",
+    "rhs": " V_37"
   }
 }
