@@ -69,19 +69,19 @@
     "variable_ID": 26,
     "lhs": "fx_A_beta",
     "network": "System",
-    "rhs": "F * (( ( K_A_beta )'  .* D )'  * pi_A_beta)"
+    "rhs": "F * (( ( k_A_beta )'  .* D )'  * pi_A_beta)"
   },
   "14": {
     "variable_ID": 27,
     "lhs": "fy_B_gamma",
     "network": "System",
-    "rhs": "F * (( ( K_B_gamma )'  .* D )'  * pi_B_gamma)"
+    "rhs": "F * (( ( k_B_gamma )'  .* D )'  * pi_B_gamma)"
   },
   "15": {
     "variable_ID": 28,
     "lhs": "fy_B_delta",
     "network": "System",
-    "rhs": "F * (( ( K_B_delta )'  .* D )'  * pi_B_delta)"
+    "rhs": "F * (( ( k_B_delta )'  .* D )'  * pi_B_delta)"
   },
   "16": {
     "variable_ID": 29,
@@ -178,5 +178,29 @@
     "lhs": "k_A_alpha",
     "network": "Properties >>> System",
     "rhs": "K_A_alpha"
+  },
+  "36": {
+    "variable_ID": 42,
+    "lhs": "K",
+    "network": "Properties",
+    "rhs": "Stack(K_A_alpha,K_A_beta,K_B_gamma,K_B_delta)"
+  },
+  "37": {
+    "variable_ID": 43,
+    "lhs": "k_A_beta",
+    "network": "Properties >>> System",
+    "rhs": "K_A_beta"
+  },
+  "38": {
+    "variable_ID": 44,
+    "lhs": "k_B_delta",
+    "network": "Properties >>> System",
+    "rhs": "K_B_delta"
+  },
+  "39": {
+    "variable_ID": 45,
+    "lhs": "k_B_gamma",
+    "network": "Properties >>> System",
+    "rhs": "K_B_gamma"
   }
 }

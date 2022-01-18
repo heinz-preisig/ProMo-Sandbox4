@@ -60,9 +60,9 @@
             "enabled": {
               "action": [],
               "colour": [
-                0,
-                0,
-                0,
+                115,
+                210,
+                22,
                 255
               ],
               "layer": "arc",
@@ -81,6 +81,38 @@
                 255
               ],
               "layer": "arc",
+              "movable": false,
+              "position_x": 0,
+              "position_y": 0,
+              "style": "dotted",
+              "width": 2
+            }
+          },
+          "signal|link|unidirectional": {
+            "enabled": {
+              "action": [],
+              "colour": [
+                138,
+                226,
+                52,
+                255
+              ],
+              "layer": "mainPanel",
+              "movable": false,
+              "position_x": 0,
+              "position_y": 0,
+              "style": "dotted",
+              "width": 2
+            },
+            "selected": {
+              "action": [],
+              "colour": [
+                252,
+                233,
+                79,
+                255
+              ],
+              "layer": "mainPanel",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
@@ -706,12 +738,29 @@
             "enabled": {
               "action": [],
               "colour": [
-                0,
-                0,
-                0,
+                115,
+                210,
+                22,
                 255
               ],
               "layer": "arc",
+              "movable": false,
+              "position_x": 0,
+              "position_y": 0,
+              "style": "dotted",
+              "width": 2
+            }
+          },
+          "signal|link|unidirectional": {
+            "enabled": {
+              "action": [],
+              "colour": [
+                138,
+                226,
+                52,
+                255
+              ],
+              "layer": "mainPanel",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
@@ -1344,9 +1393,9 @@
             "enabled": {
               "action": [],
               "colour": [
-                0,
-                0,
-                0,
+                115,
+                210,
+                22,
                 255
               ],
               "layer": "arc",
@@ -1380,6 +1429,53 @@
                 255
               ],
               "layer": "arc",
+              "movable": false,
+              "position_x": 0,
+              "position_y": 0,
+              "style": "dotted",
+              "width": 2
+            }
+          },
+          "signal|link|unidirectional": {
+            "enabled": {
+              "action": [],
+              "colour": [
+                138,
+                226,
+                52,
+                255
+              ],
+              "layer": "mainPanel",
+              "movable": false,
+              "position_x": 0,
+              "position_y": 0,
+              "style": "dotted",
+              "width": 2
+            },
+            "open": {
+              "action": [],
+              "colour": [
+                114,
+                159,
+                207,
+                255
+              ],
+              "layer": "mainPanel",
+              "movable": false,
+              "position_x": 0,
+              "position_y": 0,
+              "style": "dotted",
+              "width": 2
+            },
+            "selected": {
+              "action": [],
+              "colour": [
+                252,
+                233,
+                79,
+                255
+              ],
+              "layer": "mainPanel",
               "movable": false,
               "position_x": 0,
               "position_y": 0,

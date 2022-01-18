@@ -57,17 +57,17 @@
   "12": {
     "lhs": "fx_A_beta",
     "network": "System",
-    "rhs": " F | A | ( K_A_beta . D | N | pi_A_beta )"
+    "rhs": " F | A | ( k_A_beta . D | N | pi_A_beta )"
   },
   "14": {
     "lhs": "fy_B_gamma",
     "network": "System",
-    "rhs": " F | A | ( K_B_gamma . D | N | pi_B_gamma )"
+    "rhs": " F | A | ( k_B_gamma . D | N | pi_B_gamma )"
   },
   "15": {
     "lhs": "fy_B_delta",
     "network": "System",
-    "rhs": " F | A | ( K_B_delta . D | N | pi_B_delta )"
+    "rhs": " F | A | ( k_B_delta . D | N | pi_B_delta )"
   },
   "16": {
     "lhs": "dx",
@@ -148,5 +148,25 @@
     "lhs": "k_A_alpha",
     "network": "Properties >>> System",
     "rhs": " K_A_alpha"
+  },
+  "36": {
+    "lhs": "K",
+    "network": "Properties",
+    "rhs": " Stack ( K_A_alpha , K_A_beta , K_B_gamma , K_B_delta )"
+  },
+  "37": {
+    "lhs": "k_A_beta",
+    "network": "Properties >>> System",
+    "rhs": " K_A_beta"
+  },
+  "38": {
+    "lhs": "k_B_delta",
+    "network": "Properties >>> System",
+    "rhs": " K_B_delta"
+  },
+  "39": {
+    "lhs": "k_B_gamma",
+    "network": "Properties >>> System",
+    "rhs": " K_B_gamma"
   }
 }

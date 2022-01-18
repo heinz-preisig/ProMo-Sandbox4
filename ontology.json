@@ -23,7 +23,9 @@
       "structure": {
         "arc": {
           "signal": {
-            "link": []
+            "link": [
+              "unidirectional"
+            ]
           }
         },
         "node": {
@@ -181,7 +183,7 @@
   },
   "rules": {
     "network_enable_adding_indices": {
-      "Control": true,
+      "Control": false,
       "Properties": false,
       "System": false,
       "root": false

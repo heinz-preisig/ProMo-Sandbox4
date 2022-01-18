@@ -956,6 +956,94 @@ V_41.temperature = [ units[4] ]
 V_41.current = [ units[5] ]
 V_41.light = [ units[6] ]
 
+# 42
+label = variables[42]["label"]
+network = variables[42]["network"]
+variable_type = variables[42]["type"]
+label = variables[42]["label"]
+doc = variables[42]["doc"]
+onto_ID = "V_42"
+V_42 = onto.ProMoVar( onto_ID )
+V_42.label = label
+V_42.network = network
+V_42.variable_type = variable_type
+V_42.comment = doc
+
+units = variables[42]["units"].asList()
+V_42.time = [ units[0] ]
+V_42.length = [ units[1] ]
+V_42.amount = [ units[2] ]
+V_42.mass = [ units[3] ]
+V_42.temperature = [ units[4] ]
+V_42.current = [ units[5] ]
+V_42.light = [ units[6] ]
+
+# 43
+label = variables[43]["label"]
+network = variables[43]["network"]
+variable_type = variables[43]["type"]
+label = variables[43]["label"]
+doc = variables[43]["doc"]
+onto_ID = "V_43"
+V_43 = onto.ProMoVar( onto_ID )
+V_43.label = label
+V_43.network = network
+V_43.variable_type = variable_type
+V_43.comment = doc
+
+units = variables[43]["units"].asList()
+V_43.time = [ units[0] ]
+V_43.length = [ units[1] ]
+V_43.amount = [ units[2] ]
+V_43.mass = [ units[3] ]
+V_43.temperature = [ units[4] ]
+V_43.current = [ units[5] ]
+V_43.light = [ units[6] ]
+
+# 44
+label = variables[44]["label"]
+network = variables[44]["network"]
+variable_type = variables[44]["type"]
+label = variables[44]["label"]
+doc = variables[44]["doc"]
+onto_ID = "V_44"
+V_44 = onto.ProMoVar( onto_ID )
+V_44.label = label
+V_44.network = network
+V_44.variable_type = variable_type
+V_44.comment = doc
+
+units = variables[44]["units"].asList()
+V_44.time = [ units[0] ]
+V_44.length = [ units[1] ]
+V_44.amount = [ units[2] ]
+V_44.mass = [ units[3] ]
+V_44.temperature = [ units[4] ]
+V_44.current = [ units[5] ]
+V_44.light = [ units[6] ]
+
+# 45
+label = variables[45]["label"]
+network = variables[45]["network"]
+variable_type = variables[45]["type"]
+label = variables[45]["label"]
+doc = variables[45]["doc"]
+onto_ID = "V_45"
+V_45 = onto.ProMoVar( onto_ID )
+V_45.label = label
+V_45.network = network
+V_45.variable_type = variable_type
+V_45.comment = doc
+
+units = variables[45]["units"].asList()
+V_45.time = [ units[0] ]
+V_45.length = [ units[1] ]
+V_45.amount = [ units[2] ]
+V_45.mass = [ units[3] ]
+V_45.temperature = [ units[4] ]
+V_45.current = [ units[5] ]
+V_45.light = [ units[6] ]
+
 # functions assignments
 
 #1
@@ -1162,7 +1250,7 @@ V_25.has_function.append( F_11 )
 V_26.has_function = []
 incidence_list = []
 incidence_list.append( V_8 )
-incidence_list.append( V_14 )
+incidence_list.append( V_43 )
 incidence_list.append( V_36 )
 incidence_list.append( V_22 )
 F_ID = "F_12"
@@ -1174,7 +1262,7 @@ V_26.has_function.append( F_12 )
 V_27.has_function = []
 incidence_list = []
 incidence_list.append( V_8 )
-incidence_list.append( V_15 )
+incidence_list.append( V_45 )
 incidence_list.append( V_36 )
 incidence_list.append( V_23 )
 F_ID = "F_14"
@@ -1186,7 +1274,7 @@ V_27.has_function.append( F_14 )
 V_28.has_function = []
 incidence_list = []
 incidence_list.append( V_8 )
-incidence_list.append( V_16 )
+incidence_list.append( V_44 )
 incidence_list.append( V_36 )
 incidence_list.append( V_24 )
 F_ID = "F_15"
@@ -1301,5 +1389,44 @@ F_ID = "F_35"
 F_35 = onto.function( F_ID )
 F_35.is_function_of = incidence_list
 V_41.has_function.append( F_35 )
+#42
+
+V_42.has_function = []
+incidence_list = []
+incidence_list.append( V_37 )
+incidence_list.append( V_38 )
+incidence_list.append( V_39 )
+incidence_list.append( V_40 )
+F_ID = "F_36"
+F_36 = onto.function( F_ID )
+F_36.is_function_of = incidence_list
+V_42.has_function.append( F_36 )
+#43
+
+V_43.has_function = []
+incidence_list = []
+incidence_list.append( V_38 )
+F_ID = "F_37"
+F_37 = onto.function( F_ID )
+F_37.is_function_of = incidence_list
+V_43.has_function.append( F_37 )
+#44
+
+V_44.has_function = []
+incidence_list = []
+incidence_list.append( V_40 )
+F_ID = "F_38"
+F_38 = onto.function( F_ID )
+F_38.is_function_of = incidence_list
+V_44.has_function.append( F_38 )
+#45
+
+V_45.has_function = []
+incidence_list = []
+incidence_list.append( V_39 )
+F_ID = "F_39"
+F_39 = onto.function( F_ID )
+F_39.is_function_of = incidence_list
+V_45.has_function.append( F_39 )
 
 onto.save("variables.owl")

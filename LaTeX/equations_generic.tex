@@ -53,19 +53,19 @@ no & equation &documentation &layer \\\hline\hline
     \begin{lay}effort for B mechanism delta\end{lay} &
     \begin{lay}System\end{lay} \\
 \hyperlink{"v:25"}{ 11 }\hypertarget{"e:11"}{  } &
-    \begin{eq}{{\hat{x}^{A,\alpha}}}{_{N}} := {F}{_{N, A}} \stackrel{A}{\,\star\,} \left({k_A_alpha}{_{A}} \, . \, {D}{_{N, A}} \stackrel{N}{\,\star\,} {{\pi^{A,\alpha}}}{_{N}}\right)\end{eq} &
+    \begin{eq}{{\hat{x}^{A,\alpha}}}{_{N}} := {F}{_{N, A}} \stackrel{A}{\,\star\,} \left({{k^{A,\alpha}}}{_{A}} \, . \, {D}{_{N, A}} \stackrel{N}{\,\star\,} {{\pi^{A,\alpha}}}{_{N}}\right)\end{eq} &
     \begin{lay}netflow of token A due to mechanism alpha\end{lay} &
     \begin{lay}System\end{lay} \\
 \hyperlink{"v:26"}{ 12 }\hypertarget{"e:12"}{  } &
-    \begin{eq}{{\hat{x}^{A,\beta}}}{_{N}} := {F}{_{N, A}} \stackrel{A}{\,\star\,} \left({{K^{A,\beta}}}{_{A}} \, . \, {D}{_{N, A}} \stackrel{N}{\,\star\,} {{\pi^{A,\beta}}}{_{N}}\right)\end{eq} &
+    \begin{eq}{{\hat{x}^{A,\beta}}}{_{N}} := {F}{_{N, A}} \stackrel{A}{\,\star\,} \left({{k^{A,\beta}}}{_{A}} \, . \, {D}{_{N, A}} \stackrel{N}{\,\star\,} {{\pi^{A,\beta}}}{_{N}}\right)\end{eq} &
     \begin{lay}net flow of token A due to mechanism beta\end{lay} &
     \begin{lay}System\end{lay} \\
 \hyperlink{"v:27"}{ 14 }\hypertarget{"e:14"}{  } &
-    \begin{eq}{{\hat{y}^{B,\gamma}}}{_{N}} := {F}{_{N, A}} \stackrel{A}{\,\star\,} \left({{K^{B,\gamma}}}{_{A}} \, . \, {D}{_{N, A}} \stackrel{N}{\,\star\,} {{\pi^{B,\gamma}}}{_{N}}\right)\end{eq} &
+    \begin{eq}{{\hat{y}^{B,\gamma}}}{_{N}} := {F}{_{N, A}} \stackrel{A}{\,\star\,} \left({{k^{B,\gamma}}}{_{A}} \, . \, {D}{_{N, A}} \stackrel{N}{\,\star\,} {{\pi^{B,\gamma}}}{_{N}}\right)\end{eq} &
     \begin{lay}netflow of token B due to mechanism gamma\end{lay} &
     \begin{lay}System\end{lay} \\
 \hyperlink{"v:28"}{ 15 }\hypertarget{"e:15"}{  } &
-    \begin{eq}{{\hat{y}^{B,\delta}}}{_{N}} := {F}{_{N, A}} \stackrel{A}{\,\star\,} \left({{K^{B,\delta}}}{_{A}} \, . \, {D}{_{N, A}} \stackrel{N}{\,\star\,} {{\pi^{B,\delta}}}{_{N}}\right)\end{eq} &
+    \begin{eq}{{\hat{y}^{B,\delta}}}{_{N}} := {F}{_{N, A}} \stackrel{A}{\,\star\,} \left({{k^{B,\delta}}}{_{A}} \, . \, {D}{_{N, A}} \stackrel{N}{\,\star\,} {{\pi^{B,\delta}}}{_{N}}\right)\end{eq} &
     \begin{lay}netflow of token B due to mechansim beta\end{lay} &
     \begin{lay}System\end{lay} \\
 \hyperlink{"v:29"}{ 16 }\hypertarget{"e:16"}{  } &
@@ -125,12 +125,28 @@ no & equation &documentation &layer \\\hline\hline
     \begin{lay}differential balance for token B\end{lay} &
     \begin{lay}System\end{lay} \\
 \hyperlink{"v:35"}{ 34 }\hypertarget{"e:34"}{  } &
-    \begin{eq}{dxy}{_{}} := \text{MixedStack}\left( {{\dot{x}}}{_{N}},{{\dot{y}}}{_{N}} \right)\end{eq} &
+    \begin{eq}{{\dot{xy}}}{_{}} := \text{MixedStack}\left( {{\dot{x}}}{_{N}},{{\dot{y}}}{_{N}} \right)\end{eq} &
     \begin{lay}mixed stack of the two accumulation terms\end{lay} &
     \begin{lay}System\end{lay} \\
 \hyperlink{"v:41"}{ 35 }\hypertarget{"e:35"}{  } &
-    \begin{eq}{k_A_alpha}{_{A}} := {K_A_alpha}{_{A}}\end{eq} &
+    \begin{eq}{{k^{A,\alpha}}}{_{A}} := {{K^{A,\alpha}}}{_{A}}\end{eq} &
     \begin{lay}var doc : link\end{lay} &
+    \begin{lay}Properties >>> System\end{lay} \\
+\hyperlink{"v:42"}{ 36 }\hypertarget{"e:36"}{  } &
+    \begin{eq}{K}{_{A}} := \text{Stack}\left( {{K^{A,\alpha}}}{_{A}},{{K^{A,\beta}}}{_{A}},{{K^{B,\gamma}}}{_{A}},{{K^{B,\delta}}}{_{A}} \right)\end{eq} &
+    \begin{lay}stack of conductivities\end{lay} &
+    \begin{lay}Properties\end{lay} \\
+\hyperlink{"v:43"}{ 37 }\hypertarget{"e:37"}{  } &
+    \begin{eq}{{k^{A,\beta}}}{_{A}} := {{K^{A,\beta}}}{_{A}}\end{eq} &
+    \begin{lay}link\end{lay} &
+    \begin{lay}Properties >>> System\end{lay} \\
+\hyperlink{"v:44"}{ 38 }\hypertarget{"e:38"}{  } &
+    \begin{eq}{{k^{B,\delta}}}{_{A}} := {{K^{B,\delta}}}{_{A}}\end{eq} &
+    \begin{lay}link\end{lay} &
+    \begin{lay}Properties >>> System\end{lay} \\
+\hyperlink{"v:45"}{ 39 }\hypertarget{"e:39"}{  } &
+    \begin{eq}{{k^{B,\gamma}}}{_{A}} := {{K^{B,\gamma}}}{_{A}}\end{eq} &
+    \begin{lay}link\end{lay} &
     \begin{lay}Properties >>> System\end{lay} \\
 \hline
 \end{longtable}
