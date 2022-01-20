@@ -63,25 +63,25 @@
     "variable_ID": 25,
     "lhs": "fx_A_alpha",
     "network": "System",
-    "rhs": "np.dot(F, (np.dot(np.transpose(np.multiply(np.transpose(k_A_alpha), D)), pi_A_alpha)))"
+    "rhs": "np.dot(F, (np.dot(np.transpose(np.multiply(np.transpose(K_A_alpha), D)), pi_A_alpha)))"
   },
   "12": {
     "variable_ID": 26,
     "lhs": "fx_A_beta",
     "network": "System",
-    "rhs": "np.dot(F, (np.dot(np.transpose(np.multiply(np.transpose(k_A_beta), D)), pi_A_beta)))"
+    "rhs": "np.dot(F, (np.dot(np.transpose(np.multiply(np.transpose(K_A_beta), D)), pi_A_beta)))"
   },
   "14": {
     "variable_ID": 27,
     "lhs": "fy_B_gamma",
     "network": "System",
-    "rhs": "np.dot(F, (np.dot(np.transpose(np.multiply(np.transpose(k_B_gamma), D)), pi_B_gamma)))"
+    "rhs": "np.dot(F, (np.dot(np.transpose(np.multiply(np.transpose(K_B_gamma), D)), pi_B_gamma)))"
   },
   "15": {
     "variable_ID": 28,
     "lhs": "fy_B_delta",
     "network": "System",
-    "rhs": "np.dot(F, (np.dot(np.transpose(np.multiply(np.transpose(k_B_delta), D)), pi_B_delta)))"
+    "rhs": "np.dot(F, (np.dot(np.transpose(np.multiply(np.transpose(K_B_delta), D)), pi_B_delta)))"
   },
   "16": {
     "variable_ID": 29,
@@ -173,34 +173,88 @@
     "network": "System",
     "rhs": "MixedStack(dx,dy)"
   },
-  "35": {
-    "variable_ID": 41,
-    "lhs": "k_A_alpha",
-    "network": "Properties >>> System",
-    "rhs": "K_A_alpha"
+  "44": {
+    "variable_ID": 56,
+    "lhs": "xo",
+    "network": "Control",
+    "rhs": "np.ones(np.shape(x)), value"
   },
-  "36": {
-    "variable_ID": 42,
-    "lhs": "K",
+  "45": {
+    "variable_ID": 62,
+    "lhs": "setpoint",
+    "network": "Control",
+    "rhs": "np.ones(np.shape(m)), value"
+  },
+  "46": {
+    "variable_ID": 63,
+    "lhs": "e",
+    "network": "Control",
+    "rhs": "np.subtract(m, setpoint)"
+  },
+  "47": {
+    "variable_ID": 64,
+    "lhs": "dx",
+    "network": "Control",
+    "rhs": "np.add(np.dot(np.transpose(A), x), np.dot(np.transpose(B), e))"
+  },
+  "48": {
+    "variable_ID": 55,
+    "lhs": "x",
+    "network": "Control",
+    "rhs": "Integral(np.dot(I_N_D, dx),t,to,te)"
+  },
+  "49": {
+    "variable_ID": 67,
+    "lhs": "y",
+    "network": "Control",
+    "rhs": "np.add(np.dot(np.transpose(C), x), np.dot(I_A_D, (np.dot(np.transpose(np.transpose(np.dot(np.transpose(I_N_D), D))), e))))"
+  },
+  "50": {
+    "variable_ID": 67,
+    "lhs": "y",
+    "network": "Control",
+    "rhs": "np.add(np.dot(np.transpose(C), x), np.multiply(D_A, e))"
+  },
+  "51": {
+    "variable_ID": 57,
+    "lhs": "M_A_alpha",
     "network": "Properties",
-    "rhs": "Stack(K_A_alpha,K_A_beta,K_B_gamma,K_B_delta)"
+    "rhs": "np.ones(np.shape(M_A_alpha)), value"
   },
-  "37": {
-    "variable_ID": 43,
-    "lhs": "k_A_beta",
-    "network": "Properties >>> System",
-    "rhs": "K_A_beta"
+  "52": {
+    "variable_ID": 58,
+    "lhs": "M_A_beta",
+    "network": "Properties",
+    "rhs": "np.ones(np.shape(M_A_beta)), value"
   },
-  "38": {
-    "variable_ID": 44,
-    "lhs": "k_B_delta",
-    "network": "Properties >>> System",
-    "rhs": "K_B_delta"
+  "53": {
+    "variable_ID": 59,
+    "lhs": "M_B_gamma",
+    "network": "Properties",
+    "rhs": "np.ones(np.shape(M_B_gamma)), value"
   },
-  "39": {
-    "variable_ID": 45,
-    "lhs": "k_B_gamma",
-    "network": "Properties >>> System",
-    "rhs": "K_B_gamma"
+  "54": {
+    "variable_ID": 60,
+    "lhs": "M_B_delta",
+    "network": "Properties",
+    "rhs": "np.ones(np.shape(M_B_delta)), value"
+  },
+  "55": {
+    "variable_ID": 69,
+    "lhs": "M_A",
+    "network": "Properties",
+    "rhs": "Stack(M_A_alpha,M_A_beta)"
+  },
+  "56": {
+    "variable_ID": 70,
+    "lhs": "M_B",
+    "network": "Properties",
+    "rhs": "Stack(M_B_gamma,M_B_delta)"
+  },
+  "57": {
+    "variable_ID": 71,
+    "lhs": "M",
+    "network": "Properties",
+    "rhs": "Stack(M_A,M_B)"
   }
 }

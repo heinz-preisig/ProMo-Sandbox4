@@ -53,19 +53,19 @@ no & equation &documentation &layer \\\hline\hline
     \begin{lay}effort for B mechanism delta\end{lay} &
     \begin{lay}System\end{lay} \\
 \hyperlink{"v:25"}{ 11 }\hypertarget{"e:11"}{  } &
-    \begin{eq}{{\hat{x}^{A,\alpha}}}{_{N}} := {F}{_{N, A}} \stackrel{A}{\,\star\,} \left({{k^{A,\alpha}}}{_{A}} \, . \, {D}{_{N, A}} \stackrel{N}{\,\star\,} {{\pi^{A,\alpha}}}{_{N}}\right)\end{eq} &
+    \begin{eq}{{\hat{x}^{A,\alpha}}}{_{N}} := {F}{_{N, A}} \stackrel{A}{\,\star\,} \left({{K^{A,\alpha}}}{_{A}} \, . \, {D}{_{N, A}} \stackrel{N}{\,\star\,} {{\pi^{A,\alpha}}}{_{N}}\right)\end{eq} &
     \begin{lay}netflow of token A due to mechanism alpha\end{lay} &
     \begin{lay}System\end{lay} \\
 \hyperlink{"v:26"}{ 12 }\hypertarget{"e:12"}{  } &
-    \begin{eq}{{\hat{x}^{A,\beta}}}{_{N}} := {F}{_{N, A}} \stackrel{A}{\,\star\,} \left({{k^{A,\beta}}}{_{A}} \, . \, {D}{_{N, A}} \stackrel{N}{\,\star\,} {{\pi^{A,\beta}}}{_{N}}\right)\end{eq} &
+    \begin{eq}{{\hat{x}^{A,\beta}}}{_{N}} := {F}{_{N, A}} \stackrel{A}{\,\star\,} \left({{K^{A,\beta}}}{_{A}} \, . \, {D}{_{N, A}} \stackrel{N}{\,\star\,} {{\pi^{A,\beta}}}{_{N}}\right)\end{eq} &
     \begin{lay}net flow of token A due to mechanism beta\end{lay} &
     \begin{lay}System\end{lay} \\
 \hyperlink{"v:27"}{ 14 }\hypertarget{"e:14"}{  } &
-    \begin{eq}{{\hat{y}^{B,\gamma}}}{_{N}} := {F}{_{N, A}} \stackrel{A}{\,\star\,} \left({{k^{B,\gamma}}}{_{A}} \, . \, {D}{_{N, A}} \stackrel{N}{\,\star\,} {{\pi^{B,\gamma}}}{_{N}}\right)\end{eq} &
+    \begin{eq}{{\hat{y}^{B,\gamma}}}{_{N}} := {F}{_{N, A}} \stackrel{A}{\,\star\,} \left({{K^{B,\gamma}}}{_{A}} \, . \, {D}{_{N, A}} \stackrel{N}{\,\star\,} {{\pi^{B,\gamma}}}{_{N}}\right)\end{eq} &
     \begin{lay}netflow of token B due to mechanism gamma\end{lay} &
     \begin{lay}System\end{lay} \\
 \hyperlink{"v:28"}{ 15 }\hypertarget{"e:15"}{  } &
-    \begin{eq}{{\hat{y}^{B,\delta}}}{_{N}} := {F}{_{N, A}} \stackrel{A}{\,\star\,} \left({{k^{B,\delta}}}{_{A}} \, . \, {D}{_{N, A}} \stackrel{N}{\,\star\,} {{\pi^{B,\delta}}}{_{N}}\right)\end{eq} &
+    \begin{eq}{{\hat{y}^{B,\delta}}}{_{N}} := {F}{_{N, A}} \stackrel{A}{\,\star\,} \left({{K^{B,\delta}}}{_{A}} \, . \, {D}{_{N, A}} \stackrel{N}{\,\star\,} {{\pi^{B,\delta}}}{_{N}}\right)\end{eq} &
     \begin{lay}netflow of token B due to mechansim beta\end{lay} &
     \begin{lay}System\end{lay} \\
 \hyperlink{"v:29"}{ 16 }\hypertarget{"e:16"}{  } &
@@ -128,25 +128,61 @@ no & equation &documentation &layer \\\hline\hline
     \begin{eq}{{\dot{xy}}}{_{}} := \text{MixedStack}\left( {{\dot{x}}}{_{N}},{{\dot{y}}}{_{N}} \right)\end{eq} &
     \begin{lay}mixed stack of the two accumulation terms\end{lay} &
     \begin{lay}System\end{lay} \\
-\hyperlink{"v:41"}{ 35 }\hypertarget{"e:35"}{  } &
-    \begin{eq}{{k^{A,\alpha}}}{_{A}} := {{K^{A,\alpha}}}{_{A}}\end{eq} &
-    \begin{lay}var doc : link\end{lay} &
-    \begin{lay}Properties >>> System\end{lay} \\
-\hyperlink{"v:42"}{ 36 }\hypertarget{"e:36"}{  } &
-    \begin{eq}{K}{_{A}} := \text{Stack}\left( {{K^{A,\alpha}}}{_{A}},{{K^{A,\beta}}}{_{A}},{{K^{B,\gamma}}}{_{A}},{{K^{B,\delta}}}{_{A}} \right)\end{eq} &
-    \begin{lay}stack of conductivities\end{lay} &
+\hyperlink{"v:56"}{ 44 }\hypertarget{"e:44"}{  } &
+    \begin{eq}{xo}{_{N}} := \text{Instantiate}({x}{_{N}}, {{\#}}{_{}})\end{eq} &
+    \begin{lay}controller state initial condition\end{lay} &
+    \begin{lay}Control\end{lay} \\
+\hyperlink{"v:62"}{ 45 }\hypertarget{"e:45"}{  } &
+    \begin{eq}{{y_s}}{_{A}} := \text{Instantiate}({m}{_{A}}, {{\#}}{_{}})\end{eq} &
+    \begin{lay}set point\end{lay} &
+    \begin{lay}Control\end{lay} \\
+\hyperlink{"v:63"}{ 46 }\hypertarget{"e:46"}{  } &
+    \begin{eq}{e}{_{A}} := {m}{_{A}}  - {{y_s}}{_{A}}\end{eq} &
+    \begin{lay}control error\end{lay} &
+    \begin{lay}Control\end{lay} \\
+\hyperlink{"v:64"}{ 47 }\hypertarget{"e:47"}{  } &
+    \begin{eq}{{\dot{x}}}{_{D}} := {A}{_{N, D}} \stackrel{N}{\,\star\,} {x}{_{N}}  + {B}{_{A, D}} \stackrel{A}{\,\star\,} {e}{_{A}}\end{eq} &
+    \begin{lay}differential state\end{lay} &
+    \begin{lay}Control\end{lay} \\
+\hyperlink{"v:55"}{ 48 }\hypertarget{"e:48"}{  } &
+    \begin{eq}{x}{_{N}} := \int_{ {{t_o}}{_{}} }^{ {{t_e}}{_{}} } \, {I}{_{N, D}} \stackrel{D}{\,\star\,} {{\dot{x}}}{_{D}} \enskip d\,{t}{_{}}\end{eq} &
+    \begin{lay}controller state\end{lay} &
+    \begin{lay}Control\end{lay} \\
+\hyperlink{"v:67"}{ 49 }\hypertarget{"e:49"}{  } &
+    \begin{eq}{y}{_{A}} := {C}{_{N, A}} \stackrel{N}{\,\star\,} {x}{_{N}}  + {I}{_{A, D}} \stackrel{D}{\,\star\,} \left({I}{_{N, D}} \stackrel{N}{\,\star\,} {D}{_{N, A}} \stackrel{A}{\,\star\,} {e}{_{A}}\right)\end{eq} &
+    \begin{lay}controller output\end{lay} &
+    \begin{lay}Control\end{lay} \\
+\hyperlink{"v:67"}{ 50 }\hypertarget{"e:50"}{  } &
+    \begin{eq}{y}{_{A}} := {C}{_{N, A}} \stackrel{N}{\,\star\,} {x}{_{N}}  + {D}{_{A}} \, . \, {e}{_{A}}\end{eq} &
+    \begin{lay}controller output\end{lay} &
+    \begin{lay}Control\end{lay} \\
+\hyperlink{"v:57"}{ 51 }\hypertarget{"e:51"}{  } &
+    \begin{eq}{{M^{A,\alpha}}}{_{N}} := \text{Instantiate}({{M^{A,\alpha}}}{_{N}}, {{\#}}{_{}})\end{eq} &
+    \begin{lay}norming factor token A mechanism alpha\end{lay} &
     \begin{lay}Properties\end{lay} \\
-\hyperlink{"v:43"}{ 37 }\hypertarget{"e:37"}{  } &
-    \begin{eq}{{k^{A,\beta}}}{_{A}} := {{K^{A,\beta}}}{_{A}}\end{eq} &
-    \begin{lay}link\end{lay} &
-    \begin{lay}Properties >>> System\end{lay} \\
-\hyperlink{"v:44"}{ 38 }\hypertarget{"e:38"}{  } &
-    \begin{eq}{{k^{B,\delta}}}{_{A}} := {{K^{B,\delta}}}{_{A}}\end{eq} &
-    \begin{lay}link\end{lay} &
-    \begin{lay}Properties >>> System\end{lay} \\
-\hyperlink{"v:45"}{ 39 }\hypertarget{"e:39"}{  } &
-    \begin{eq}{{k^{B,\gamma}}}{_{A}} := {{K^{B,\gamma}}}{_{A}}\end{eq} &
-    \begin{lay}link\end{lay} &
-    \begin{lay}Properties >>> System\end{lay} \\
+\hyperlink{"v:58"}{ 52 }\hypertarget{"e:52"}{  } &
+    \begin{eq}{{M^{A,\beta}}}{_{N}} := \text{Instantiate}({{M^{A,\beta}}}{_{N}}, {{\#}}{_{}})\end{eq} &
+    \begin{lay}norming factor token A mechanism beta\end{lay} &
+    \begin{lay}Properties\end{lay} \\
+\hyperlink{"v:59"}{ 53 }\hypertarget{"e:53"}{  } &
+    \begin{eq}{{M^{B,\gamma}}}{_{N}} := \text{Instantiate}({{M^{B,\gamma}}}{_{N}}, {{\#}}{_{}})\end{eq} &
+    \begin{lay}norming factor token B mechanism gamma\end{lay} &
+    \begin{lay}Properties\end{lay} \\
+\hyperlink{"v:60"}{ 54 }\hypertarget{"e:54"}{  } &
+    \begin{eq}{{M^{B,\delta}}}{_{N}} := \text{Instantiate}({{M^{B,\delta}}}{_{N}}, {{\#}}{_{}})\end{eq} &
+    \begin{lay}norming factor token B mechanism delta\end{lay} &
+    \begin{lay}Properties\end{lay} \\
+\hyperlink{"v:69"}{ 55 }\hypertarget{"e:55"}{  } &
+    \begin{eq}{{M^{A}}}{_{N}} := \text{Stack}\left( {{M^{A,\alpha}}}{_{N}},{{M^{A,\beta}}}{_{N}} \right)\end{eq} &
+    \begin{lay}stack of M matrices token A\end{lay} &
+    \begin{lay}Properties\end{lay} \\
+\hyperlink{"v:70"}{ 56 }\hypertarget{"e:56"}{  } &
+    \begin{eq}{{M^{B}}}{_{N}} := \text{Stack}\left( {{M^{B,\gamma}}}{_{N}},{{M^{B,\delta}}}{_{N}} \right)\end{eq} &
+    \begin{lay}stack of M matrices token B\end{lay} &
+    \begin{lay}Properties\end{lay} \\
+\hyperlink{"v:71"}{ 57 }\hypertarget{"e:57"}{  } &
+    \begin{eq}{M}{_{N}} := \text{Stack}\left( {{M^{A}}}{_{N}},{{M^{B}}}{_{N}} \right)\end{eq} &
+    \begin{lay}stack of M matrices token A and B\end{lay} &
+    \begin{lay}Properties\end{lay} \\
 \hline
 \end{longtable}

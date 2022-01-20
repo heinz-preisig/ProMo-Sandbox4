@@ -52,22 +52,22 @@
   "11": {
     "lhs": "fx_A_alpha",
     "network": "System",
-    "rhs": " F | A | ( k_A_alpha . D | N | pi_A_alpha )"
+    "rhs": " F | A | ( K_A_alpha . D | N | pi_A_alpha )"
   },
   "12": {
     "lhs": "fx_A_beta",
     "network": "System",
-    "rhs": " F | A | ( k_A_beta . D | N | pi_A_beta )"
+    "rhs": " F | A | ( K_A_beta . D | N | pi_A_beta )"
   },
   "14": {
     "lhs": "fy_B_gamma",
     "network": "System",
-    "rhs": " F | A | ( k_B_gamma . D | N | pi_B_gamma )"
+    "rhs": " F | A | ( K_B_gamma . D | N | pi_B_gamma )"
   },
   "15": {
     "lhs": "fy_B_delta",
     "network": "System",
-    "rhs": " F | A | ( k_B_delta . D | N | pi_B_delta )"
+    "rhs": " F | A | ( K_B_delta . D | N | pi_B_delta )"
   },
   "16": {
     "lhs": "dx",
@@ -144,29 +144,74 @@
     "network": "System",
     "rhs": " MixedStack ( dx , dy )"
   },
-  "35": {
-    "lhs": "k_A_alpha",
-    "network": "Properties >>> System",
-    "rhs": " K_A_alpha"
+  "44": {
+    "lhs": "xo",
+    "network": "Control",
+    "rhs": " Instantiate ( x , value )"
   },
-  "36": {
-    "lhs": "K",
+  "45": {
+    "lhs": "setpoint",
+    "network": "Control",
+    "rhs": " Instantiate ( m , value )"
+  },
+  "46": {
+    "lhs": "e",
+    "network": "Control",
+    "rhs": " m - setpoint"
+  },
+  "47": {
+    "lhs": "dx",
+    "network": "Control",
+    "rhs": " A | N | x + B | A | e"
+  },
+  "48": {
+    "lhs": "x",
+    "network": "Control",
+    "rhs": " Integral ( I_N_D | D | dx :: t in [ to , te ] )"
+  },
+  "49": {
+    "lhs": "y",
+    "network": "Control",
+    "rhs": " C | N | x + I_A_D | D | ( I_N_D | N | D | A | e )"
+  },
+  "50": {
+    "lhs": "y",
+    "network": "Control",
+    "rhs": " C | N | x + D_A . e"
+  },
+  "51": {
+    "lhs": "M_A_alpha",
     "network": "Properties",
-    "rhs": " Stack ( K_A_alpha , K_A_beta , K_B_gamma , K_B_delta )"
+    "rhs": " Instantiate ( M_A_alpha , value )"
   },
-  "37": {
-    "lhs": "k_A_beta",
-    "network": "Properties >>> System",
-    "rhs": " K_A_beta"
+  "52": {
+    "lhs": "M_A_beta",
+    "network": "Properties",
+    "rhs": " Instantiate ( M_A_beta , value )"
   },
-  "38": {
-    "lhs": "k_B_delta",
-    "network": "Properties >>> System",
-    "rhs": " K_B_delta"
+  "53": {
+    "lhs": "M_B_gamma",
+    "network": "Properties",
+    "rhs": " Instantiate ( M_B_gamma , value )"
   },
-  "39": {
-    "lhs": "k_B_gamma",
-    "network": "Properties >>> System",
-    "rhs": " K_B_gamma"
+  "54": {
+    "lhs": "M_B_delta",
+    "network": "Properties",
+    "rhs": " Instantiate ( M_B_delta , value )"
+  },
+  "55": {
+    "lhs": "M_A",
+    "network": "Properties",
+    "rhs": " Stack ( M_A_alpha , M_A_beta )"
+  },
+  "56": {
+    "lhs": "M_B",
+    "network": "Properties",
+    "rhs": " Stack ( M_B_gamma , M_B_delta )"
+  },
+  "57": {
+    "lhs": "M",
+    "network": "Properties",
+    "rhs": " Stack ( M_A , M_B )"
   }
 }

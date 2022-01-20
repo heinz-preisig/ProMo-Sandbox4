@@ -12,7 +12,10 @@
         "node": [
           "frame",
           "state",
-          "constant"
+          "constant",
+          "differentialState",
+          "measure",
+          "control"
         ]
       },
       "children": [],
@@ -54,7 +57,8 @@
         "node": [
           "frame",
           "state",
-          "constant"
+          "constant",
+          "differentialState"
         ]
       },
       "children": [],
@@ -64,7 +68,8 @@
       ],
       "structure": {
         "arc": {
-          "tokenC": {}
+          "tokenA": {},
+          "tokenB": {}
         },
         "node": {
           "constant": [
@@ -78,7 +83,8 @@
           ]
         },
         "token": {
-          "tokenC": []
+          "tokenA": [],
+          "tokenB": []
         }
       },
       "type": "inter"
@@ -97,7 +103,9 @@
           "state",
           "constant",
           "secondaryState",
-          "differentialState"
+          "differentialState",
+          "measure",
+          "control"
         ]
       },
       "children": [],
@@ -153,7 +161,8 @@
         "node": [
           "frame",
           "state",
-          "constant"
+          "constant",
+          "differentialState"
         ]
       },
       "children": [
@@ -203,8 +212,10 @@
     "variable_classes_being_state_variables": [],
     "variable_classes_having_port_variables": [
       "constant",
+      "control",
       "differenceOperator",
       "frame",
+      "measure",
       "network",
       "state"
     ]

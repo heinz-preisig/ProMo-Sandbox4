@@ -3906,77 +3906,15 @@
         24
       ]
     },
-    "Properties.node.constant|lumped|tokenC.base": {
-      "tree": {
-        "0": {
-          "ancestors": [],
-          "children": [
-            1
-          ]
-        },
-        "1": {
-          "ancestors": [
-            0
-          ],
-          "children": [
-            2,
-            3,
-            4,
-            5
-          ]
-        },
-        "2": {
-          "ancestors": [
-            1,
-            0
-          ],
-          "children": []
-        },
-        "3": {
-          "ancestors": [
-            1,
-            0
-          ],
-          "children": []
-        },
-        "4": {
-          "ancestors": [
-            1,
-            0
-          ],
-          "children": []
-        },
-        "5": {
-          "ancestors": [
-            1,
-            0
-          ],
-          "children": []
-        }
-      },
-      "nodes": {
-        "0": "variable_42",
-        "1": "equation_36",
-        "2": "variable_37",
-        "3": "variable_38",
-        "4": "variable_39",
-        "5": "variable_40"
-      },
-      "IDs": {
-        "variable_42": 0,
-        "equation_36": 1,
-        "variable_37": 2,
-        "variable_38": 3,
-        "variable_39": 4,
-        "variable_40": 5
-      },
-      "root_variable": 42,
-      "blocked": [],
-      "buddies": [],
-      "to_be_initialised": []
-    },
-    "Properties.node.dynamic|lumped|tokenC.base": null,
-    "Properties.node.event|lumped|tokenC.base": null,
+    "Properties.node.constant|lumped|tokenA.base": null,
+    "Properties.node.constant|lumped|tokenB.base": null,
+    "Properties.node.constant|lumped|tokenA_tokenB.base": null,
+    "Properties.node.dynamic|lumped|tokenA.base": null,
+    "Properties.node.dynamic|lumped|tokenB.base": null,
+    "Properties.node.dynamic|lumped|tokenA_tokenB.base": null,
+    "Properties.node.event|lumped|tokenA.base": null,
+    "Properties.node.event|lumped|tokenB.base": null,
+    "Properties.node.event|lumped|tokenA_tokenB.base": null,
     "Control.node.constant|lumped|signal.base": null,
     "Control.node.dynamic|lumped|signal.base": null,
     "Control.node.event|lumped|signal.base": null,
@@ -4343,6 +4281,76 @@
       "to_be_initialised": [
         24
       ]
+    },
+    "Control.arc.signal|link|unidirectional.base": null,
+    "Properties.node.constant|lumped|tokenC.base": {
+      "tree": {
+        "0": {
+          "ancestors": [],
+          "children": [
+            1
+          ]
+        },
+        "1": {
+          "ancestors": [
+            0
+          ],
+          "children": [
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        "2": {
+          "ancestors": [
+            1,
+            0
+          ],
+          "children": []
+        },
+        "3": {
+          "ancestors": [
+            1,
+            0
+          ],
+          "children": []
+        },
+        "4": {
+          "ancestors": [
+            1,
+            0
+          ],
+          "children": []
+        },
+        "5": {
+          "ancestors": [
+            1,
+            0
+          ],
+          "children": []
+        }
+      },
+      "nodes": {
+        "0": "variable_42",
+        "1": "equation_36",
+        "2": "variable_37",
+        "3": "variable_38",
+        "4": "variable_39",
+        "5": "variable_40"
+      },
+      "IDs": {
+        "variable_42": 0,
+        "equation_36": 1,
+        "variable_37": 2,
+        "variable_38": 3,
+        "variable_39": 4,
+        "variable_40": 5
+      },
+      "root_variable": 42,
+      "blocked": [],
+      "buddies": [],
+      "to_be_initialised": []
     },
     "System.arc.tokenA|mechanismA|lumped.": {
       "tree": {
