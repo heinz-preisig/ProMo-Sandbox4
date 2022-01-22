@@ -550,7 +550,7 @@
       "network": "Control",
       "port_variable": "True",
       "tokens": "[]",
-      "type": "measure",
+      "type": "measureIn",
       "units": "[0, 0, 0, 0, 0, 0, 0, 0]"
     },
     "62": {
@@ -562,7 +562,7 @@
       "network": "Control",
       "port_variable": "False",
       "tokens": "[]",
-      "type": "measure",
+      "type": "constant",
       "units": "[0, 0, 0, 0, 0, 0, 0, 0]"
     },
     "63": {
@@ -574,7 +574,7 @@
       "network": "Control",
       "port_variable": "False",
       "tokens": "[]",
-      "type": "measure",
+      "type":"constantp",
       "units": "[0, 0, 0, 0, 0, 0, 0, 0]"
     },
     "64": {
@@ -622,7 +622,7 @@
       "network": "Control",
       "port_variable": "False",
       "tokens": "[]",
-      "type": "control",
+      "type": "controlOut",
       "units": "[0, 0, 0, 0, 0, 0, 0, 0]"
     },
     "68": {

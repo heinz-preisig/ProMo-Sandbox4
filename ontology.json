@@ -14,8 +14,8 @@
           "state",
           "constant",
           "differentialState",
-          "measure",
-          "control"
+          "measureIn",
+          "controlOut"
         ]
       },
       "children": [],
@@ -104,8 +104,8 @@
           "constant",
           "secondaryState",
           "differentialState",
-          "measure",
-          "control"
+          "measureOut",
+          "controlIn"
         ]
       },
       "children": [],
@@ -202,8 +202,7 @@
       "event"
     ],
     "nodes_allowing_token_injection": [
-      "constant",
-      "dynamic"
+      "constant"
     ],
     "nodes_allowing_token_transfer": [
       "intraface"
@@ -212,10 +211,10 @@
     "variable_classes_being_state_variables": [],
     "variable_classes_having_port_variables": [
       "constant",
-      "control",
+      "controlIn",
       "differenceOperator",
       "frame",
-      "measure",
+      "measureIn",
       "network",
       "state"
     ]

@@ -1102,9 +1102,7 @@
               "width": 35
             },
             "enabled": {
-              "action": [
-                "inject"
-              ],
+              "action": [],
               "colour": [
                 186,
                 189,
@@ -1151,9 +1149,7 @@
               "width": 30
             },
             "enabled": {
-              "action": [
-                "inject"
-              ],
+              "action": [],
               "colour": [
                 239,
                 41,
@@ -1200,9 +1196,7 @@
               "width": 20
             },
             "enabled": {
-              "action": [
-                "inject"
-              ],
+              "action": [],
               "colour": [
                 85,
                 87,
@@ -2321,6 +2315,14 @@
         52,
         101,
         164,
+        255
+      ]
+    },
+    "tokenC": {
+      "colour": [
+        115,
+        210,
+        22,
         255
       ]
     }
