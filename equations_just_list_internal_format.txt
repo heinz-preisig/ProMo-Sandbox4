@@ -41,3 +41,7 @@
 55 :: M_A =  Stack ( M_A_alpha , M_A_beta )
 56 :: M_B =  Stack ( M_B_gamma , M_B_delta )
 57 :: M =  Stack ( M_A , M_B )
+58 :: pi_A_alpha_norm =  Instantiate ( pi_A_alpha , value )
+59 :: measure =  inv ( pi_A_alpha_norm ) . pi_A_alpha
+60 :: measure_set_A =  I_measure | N | measure
+61 :: m =  Instantiate ( m , value )

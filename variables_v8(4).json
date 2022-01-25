@@ -544,7 +544,7 @@
     "61": {
       "aliases": "{'global_ID': ' V_61', 'python': 'm', 'cpp': 'm', 'matlab': 'm', 'latex': 'm', 'internal_code': 'm'}",
       "doc": "measurement",
-      "equations": "{61: {'rhs': ' O_11 D_0 V_61 D_7 V_3 D_1', 'type': 'generic', 'doc': 'measurement', 'network': 'Control', 'incidence_list': ['3', '61']}}",
+      "equations": "{}",
       "index_structures": "[2]",
       "label": "m",
       "network": "Control",
@@ -946,6 +946,6 @@
   },
   "Ontology_global_IDs": {
     "variable": 75,
-    "equation": 61
+    "equation": 60
   }
 }

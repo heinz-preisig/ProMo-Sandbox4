@@ -129,7 +129,7 @@ no & equation &documentation &layer \\\hline\hline
     \begin{lay}mixed stack of the two accumulation terms\end{lay} &
     \begin{lay}System\end{lay} \\
 \hyperlink{"v:56"}{ 44 }\hypertarget{"e:44"}{  } &
-    \begin{eq}{xo}{_{N}} := \text{Instantiate}({x}{_{N}}, {{\#}}{_{}})\end{eq} &
+    \begin{eq}{{x^o}}{_{N}} := \text{Instantiate}({x}{_{N}}, {{\#}}{_{}})\end{eq} &
     \begin{lay}controller state initial condition\end{lay} &
     \begin{lay}Control\end{lay} \\
 \hyperlink{"v:62"}{ 45 }\hypertarget{"e:45"}{  } &
@@ -184,5 +184,21 @@ no & equation &documentation &layer \\\hline\hline
     \begin{eq}{M}{_{N}} := \text{Stack}\left( {{M^{A}}}{_{N}},{{M^{B}}}{_{N}} \right)\end{eq} &
     \begin{lay}stack of M matrices token A and B\end{lay} &
     \begin{lay}Properties\end{lay} \\
+\hyperlink{"v:72"}{ 58 }\hypertarget{"e:58"}{  } &
+    \begin{eq}{{\pi^{A,\alpha,o}}}{_{N}} := \text{Instantiate}({{\pi^{A,\alpha}}}{_{N}}, {{\#}}{_{}})\end{eq} &
+    \begin{lay}norming factor for pi A alpha\end{lay} &
+    \begin{lay}System\end{lay} \\
+\hyperlink{"v:74"}{ 59 }\hypertarget{"e:59"}{  } &
+    \begin{eq}{measure}{_{N}} := \left( {{\pi^{A,\alpha,o}}}{_{N}} \right)^{-1} \, . \, {{\pi^{A,\alpha}}}{_{N}}\end{eq} &
+    \begin{lay}normed measurement of pi A alpha\end{lay} &
+    \begin{lay}System\end{lay} \\
+\hyperlink{"v:75"}{ 60 }\hypertarget{"e:60"}{  } &
+    \begin{eq}{measure_set_A}{_{A}} := {I_measure}{_{N, A}} \stackrel{N}{\,\star\,} {measure}{_{N}}\end{eq} &
+    \begin{lay}measurement vector for A\end{lay} &
+    \begin{lay}System\end{lay} \\
+\hyperlink{"v:61"}{ 61 }\hypertarget{"e:61"}{  } &
+    \begin{eq}{m}{_{A}} := \text{Instantiate}({m}{_{A}}, {{\#}}{_{}})\end{eq} &
+    \begin{lay}measurement\end{lay} &
+    \begin{lay}Control\end{lay} \\
 \hline
 \end{longtable}

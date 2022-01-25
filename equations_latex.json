@@ -175,7 +175,7 @@
   },
   "44": {
     "variable_ID": 56,
-    "lhs": "{xo}{_{N}}",
+    "lhs": "{{x^o}}{_{N}}",
     "network": "Control",
     "rhs": "\\text{Instantiate}({x}{_{N}}, {{\\#}}{_{}})"
   },
@@ -256,5 +256,29 @@
     "lhs": "{M}{_{N}}",
     "network": "Properties",
     "rhs": "\\text{Stack}\\left( {{M^{A}}}{_{N}},{{M^{B}}}{_{N}} \\right)"
+  },
+  "58": {
+    "variable_ID": 72,
+    "lhs": "{{\\pi^{A,\\alpha,o}}}{_{N}}",
+    "network": "System",
+    "rhs": "\\text{Instantiate}({{\\pi^{A,\\alpha}}}{_{N}}, {{\\#}}{_{}})"
+  },
+  "59": {
+    "variable_ID": 74,
+    "lhs": "{measure}{_{N}}",
+    "network": "System",
+    "rhs": "\\left( {{\\pi^{A,\\alpha,o}}}{_{N}} \\right)^{-1} \\, . \\, {{\\pi^{A,\\alpha}}}{_{N}}"
+  },
+  "60": {
+    "variable_ID": 75,
+    "lhs": "{measure_set_A}{_{A}}",
+    "network": "System",
+    "rhs": "{I_measure}{_{N, A}} \\stackrel{N}{\\,\\star\\,} {measure}{_{N}}"
+  },
+  "61": {
+    "variable_ID": 61,
+    "lhs": "{m}{_{A}}",
+    "network": "Control",
+    "rhs": "\\text{Instantiate}({m}{_{A}}, {{\\#}}{_{}})"
   }
 }

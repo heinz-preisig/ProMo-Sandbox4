@@ -256,5 +256,29 @@
     "lhs": " V_71",
     "network": "Properties",
     "rhs": " F_20 D_0 V_69 D_7 V_70 D_1"
+  },
+  "58": {
+    "variable_ID": 72,
+    "lhs": " V_72",
+    "network": "System",
+    "rhs": " O_11 D_0 V_21 D_7 V_3 D_1"
+  },
+  "59": {
+    "variable_ID": 74,
+    "lhs": " V_74",
+    "network": "System",
+    "rhs": " F_15 D_0 V_72 D_1 O_4 V_21"
+  },
+  "60": {
+    "variable_ID": 75,
+    "lhs": " V_75",
+    "network": "System",
+    "rhs": " V_73  O_5  I_1 O_5  V_74"
+  },
+  "61": {
+    "variable_ID": 61,
+    "lhs": " V_61",
+    "network": "Control",
+    "rhs": " O_11 D_0 V_61 D_7 V_3 D_1"
   }
 }

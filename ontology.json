@@ -4,7 +4,9 @@
     "Control": {
       "behaviour": {
         "arc": [
-          "link"
+          "controlOut",
+          "link",
+          "measureIn"
         ],
         "graph": [
           "network"
@@ -13,9 +15,7 @@
           "frame",
           "state",
           "constant",
-          "differentialState",
-          "measureIn",
-          "controlOut"
+          "differentialState"
         ]
       },
       "children": [],
@@ -92,6 +92,8 @@
     "System": {
       "behaviour": {
         "arc": [
+          "controlIn",
+          "measureOut",
           "transport"
         ],
         "graph": [
@@ -102,10 +104,8 @@
           "frame",
           "state",
           "constant",
-          "secondaryState",
           "differentialState",
-          "measureOut",
-          "controlIn"
+          "secondaryState"
         ]
       },
       "children": [],
@@ -119,7 +119,7 @@
             "mechanismA": [
               "lumped"
             ],
-            "mechansimB": [
+            "mechanismB": [
               "lumped"
             ]
           },
@@ -166,9 +166,9 @@
         ]
       },
       "children": [
-        "System",
         "Properties",
-        "Control"
+        "Control",
+        "System"
       ],
       "name": "root",
       "parents": [],
@@ -187,7 +187,7 @@
         },
         "token": {}
       },
-      "type": "intra"
+      "type": "inter"
     }
   },
   "rules": {
@@ -195,7 +195,8 @@
       "Control": false,
       "Properties": false,
       "System": false,
-      "root": false
+      "root": false,
+      "system": false
     },
     "nodes_allowing_token_conversion": [
       "dynamic",

@@ -256,5 +256,29 @@
     "lhs": "M",
     "network": "Properties",
     "rhs": "Stack(M_A,M_B)"
+  },
+  "58": {
+    "variable_ID": 72,
+    "lhs": "pi_A_alpha_norm",
+    "network": "System",
+    "rhs": "np.ones(np.shape(pi_A_alpha)), value"
+  },
+  "59": {
+    "variable_ID": 74,
+    "lhs": "measure",
+    "network": "System",
+    "rhs": "ganger(np.reciprocal(pi_A_alpha_norm), pi_A_alpha)"
+  },
+  "60": {
+    "variable_ID": 75,
+    "lhs": "measure_set_A",
+    "network": "System",
+    "rhs": "np.dot(np.transpose(I_measure), measure)"
+  },
+  "61": {
+    "variable_ID": 61,
+    "lhs": "m",
+    "network": "Control",
+    "rhs": "np.ones(np.shape(m)), value"
   }
 }

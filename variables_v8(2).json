@@ -482,7 +482,7 @@
       "units": "[0, 0, 0, 0, 0, 0, 0, 0]"
     },
     "56": {
-      "aliases": "{'global_ID': ' V_56', 'python': 'xo', 'cpp': 'xo', 'matlab': 'xo', 'latex': '{x^o}', 'internal_code': 'xo'}",
+      "aliases": "{'global_ID': ' V_56', 'python': 'xo', 'cpp': 'xo', 'matlab': 'xo', 'latex': 'xo', 'internal_code': 'xo'}",
       "doc": "controller state initial condition",
       "equations": "{44: {'rhs': ' O_11 D_0 V_55 D_7 V_3 D_1', 'type': 'generic', 'doc': 'controller state initial condition', 'network': 'Control', 'incidence_list': ['3', '55']}}",
       "index_structures": "[1]",
@@ -544,7 +544,7 @@
     "61": {
       "aliases": "{'global_ID': ' V_61', 'python': 'm', 'cpp': 'm', 'matlab': 'm', 'latex': 'm', 'internal_code': 'm'}",
       "doc": "measurement",
-      "equations": "{61: {'rhs': ' O_11 D_0 V_61 D_7 V_3 D_1', 'type': 'generic', 'doc': 'measurement', 'network': 'Control', 'incidence_list': ['3', '61']}}",
+      "equations": "{}",
       "index_structures": "[2]",
       "label": "m",
       "network": "Control",
@@ -674,7 +674,7 @@
       "units": "[0, 0, 0, 0, 0, 0, 0, 0]"
     },
     "72": {
-      "aliases": "{'global_ID': ' V_72', 'python': 'pi_A_alpha_norm', 'cpp': 'pi_A_alpha_norm', 'matlab': 'pi_A_alpha_norm', 'latex': '{\\\\pi^{A,\\\\alpha,o}}', 'internal_code': 'pi_A_alpha_norm'}",
+      "aliases": "{'global_ID': ' V_72', 'python': 'pi_A_alpha_norm', 'cpp': 'pi_A_alpha_norm', 'matlab': 'pi_A_alpha_norm', 'latex': 'pi_A_alpha_norm', 'internal_code': 'pi_A_alpha_norm'}",
       "doc": "norming factor for pi_A_alpha",
       "equations": "{58: {'rhs': ' O_11 D_0 V_21 D_7 V_3 D_1', 'type': 'generic', 'doc': 'norming factor for pi_A_alpha', 'network': 'System', 'incidence_list': ['21', '3']}}",
       "index_structures": "[1]",
@@ -684,42 +684,6 @@
       "tokens": "[]",
       "type": "constant",
       "units": "[0, 1, 0, 0, 0, 0, 0, 0]"
-    },
-    "73": {
-      "aliases": "{'global_ID': ' V_73', 'python': 'I_measure', 'cpp': 'I_measure', 'matlab': 'I_measure', 'latex': 'I_measure', 'internal_code': 'I_measure'}",
-      "doc": "unidirectional graph for interface connection",
-      "equations": "{}",
-      "index_structures": "[1, 2]",
-      "label": "I_measure",
-      "network": "System",
-      "port_variable": "True",
-      "tokens": "[]",
-      "type": "network",
-      "units": "[0, 0, 0, 0, 0, 0, 0, 0]"
-    },
-    "74": {
-      "aliases": "{'global_ID': ' V_74', 'python': 'measure', 'cpp': 'measure', 'matlab': 'measure', 'latex': 'measure', 'internal_code': 'measure'}",
-      "doc": "normed measurement of pi_A_alpha",
-      "equations": "{59: {'rhs': ' F_15 D_0 V_72 D_1 O_4 V_21', 'type': 'generic', 'doc': 'normed measurement of pi_A_alpha', 'network': 'System', 'incidence_list': ['21', '72']}}",
-      "index_structures": "[1]",
-      "label": "measure",
-      "network": "System",
-      "port_variable": "False",
-      "tokens": "[]",
-      "type": "measureOut",
-      "units": "[0, 0, 0, 0, 0, 0, 0, 0]"
-    },
-    "75": {
-      "aliases": "{'global_ID': ' V_75', 'python': 'measure_set_A', 'cpp': 'measure_set_A', 'matlab': 'measure_set_A', 'latex': 'measure_set_A', 'internal_code': 'measure_set_A'}",
-      "doc": "measurement vector for A",
-      "equations": "{60: {'rhs': ' V_73  O_5  I_1 O_5  V_74', 'type': 'generic', 'doc': 'measurement vector for A', 'network': 'System', 'incidence_list': ['73', '74']}}",
-      "index_structures": "[2]",
-      "label": "measure_set_A",
-      "network": "System",
-      "port_variable": "False",
-      "tokens": "[]",
-      "type": "measureOut",
-      "units": "[0, 0, 0, 0, 0, 0, 0, 0]"
     }
   },
   "indices": {
@@ -945,7 +909,7 @@
     }
   },
   "Ontology_global_IDs": {
-    "variable": 75,
-    "equation": 61
+    "variable": 72,
+    "equation": 58
   }
 }
