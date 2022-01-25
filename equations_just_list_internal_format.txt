@@ -45,3 +45,4 @@
 59 :: measure =  inv ( pi_A_alpha_norm ) . pi_A_alpha
 60 :: measure_set_A =  I_measure | N | measure
 61 :: m =  Instantiate ( m , value )
+62 :: m =  measure_set_A

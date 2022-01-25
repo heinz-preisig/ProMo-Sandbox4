@@ -233,5 +233,10 @@
     "lhs": "m",
     "network": "Control",
     "rhs": " Instantiate ( m , value )"
+  },
+  "62": {
+    "lhs": "m",
+    "network": "System >>> Control",
+    "rhs": " measure_set_A"
   }
 }

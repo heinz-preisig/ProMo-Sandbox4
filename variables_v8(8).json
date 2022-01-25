@@ -686,7 +686,7 @@
       "units": "[0, 1, 0, 0, 0, 0, 0, 0]"
     },
     "73": {
-      "aliases": "{'global_ID': ' V_73', 'python': 'I_measure', 'cpp': 'I_measure', 'matlab': 'I_measure', 'latex': '{I_z}', 'internal_code': 'I_measure'}",
+      "aliases": "{'global_ID': ' V_73', 'python': 'I_measure', 'cpp': 'I_measure', 'matlab': 'I_measure', 'latex': 'I_measure', 'internal_code': 'I_measure'}",
       "doc": "unidirectional graph for interface connection",
       "equations": "{}",
       "index_structures": "[1, 2]",
@@ -698,7 +698,7 @@
       "units": "[0, 0, 0, 0, 0, 0, 0, 0]"
     },
     "74": {
-      "aliases": "{'global_ID': ' V_74', 'python': 'measure', 'cpp': 'measure', 'matlab': 'measure', 'latex': 'z', 'internal_code': 'measure'}",
+      "aliases": "{'global_ID': ' V_74', 'python': 'measure', 'cpp': 'measure', 'matlab': 'measure', 'latex': 'measure', 'internal_code': 'measure'}",
       "doc": "normed measurement of pi_A_alpha",
       "equations": "{59: {'rhs': ' F_15 D_0 V_72 D_1 O_4 V_21', 'type': 'generic', 'doc': 'normed measurement of pi_A_alpha', 'network': 'System', 'incidence_list': ['21', '72']}}",
       "index_structures": "[1]",
@@ -710,7 +710,7 @@
       "units": "[0, 0, 0, 0, 0, 0, 0, 0]"
     },
     "75": {
-      "aliases": "{'global_ID': ' V_75', 'python': 'measure_set_A', 'cpp': 'measure_set_A', 'matlab': 'measure_set_A', 'latex': '{\\\\V{z}}', 'internal_code': 'measure_set_A'}",
+      "aliases": "{'global_ID': ' V_75', 'python': 'measure_set_A', 'cpp': 'measure_set_A', 'matlab': 'measure_set_A', 'latex': 'measure_set_A', 'internal_code': 'measure_set_A'}",
       "doc": "measurement vector for A",
       "equations": "{60: {'rhs': ' V_73  O_5  I_1 O_5  V_74', 'type': 'generic', 'doc': 'measurement vector for A', 'network': 'System', 'incidence_list': ['73', '74']}}",
       "index_structures": "[2]",

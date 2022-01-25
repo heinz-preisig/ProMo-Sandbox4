@@ -280,5 +280,11 @@
     "lhs": "m",
     "network": "Control",
     "rhs": "np.ones(np.shape(m)), value"
+  },
+  "62": {
+    "variable_ID": 61,
+    "lhs": "m",
+    "network": "System >>> Control",
+    "rhs": "measure_set_A"
   }
 }

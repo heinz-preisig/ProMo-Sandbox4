@@ -265,20 +265,26 @@
   },
   "59": {
     "variable_ID": 74,
-    "lhs": "{measure}{_{N}}",
+    "lhs": "{z}{_{N}}",
     "network": "System",
     "rhs": "\\left( {{\\pi^{A,\\alpha,o}}}{_{N}} \\right)^{-1} \\, . \\, {{\\pi^{A,\\alpha}}}{_{N}}"
   },
   "60": {
     "variable_ID": 75,
-    "lhs": "{measure_set_A}{_{A}}",
+    "lhs": "{{\\V{z}}}{_{A}}",
     "network": "System",
-    "rhs": "{I_measure}{_{N, A}} \\stackrel{N}{\\,\\star\\,} {measure}{_{N}}"
+    "rhs": "{{I_z}}{_{N, A}} \\stackrel{N}{\\,\\star\\,} {z}{_{N}}"
   },
   "61": {
     "variable_ID": 61,
     "lhs": "{m}{_{A}}",
     "network": "Control",
     "rhs": "\\text{Instantiate}({m}{_{A}}, {{\\#}}{_{}})"
+  },
+  "62": {
+    "variable_ID": 61,
+    "lhs": "{m}{_{A}}",
+    "network": "System >>> Control",
+    "rhs": "{{\\V{z}}}{_{A}}"
   }
 }
