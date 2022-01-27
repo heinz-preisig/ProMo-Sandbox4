@@ -52,7 +52,7 @@
   "11": {
     "lhs": "fx_A_alpha",
     "network": "System",
-    "rhs": " F | A | ( K_A_alpha . D | N | pi_A_alpha )"
+    "rhs": " F | A | ( u . K_A_alpha . D | N | pi_A_alpha )"
   },
   "12": {
     "lhs": "fx_A_beta",
@@ -238,5 +238,45 @@
     "lhs": "m",
     "network": "System >>> Control",
     "rhs": " measure_set_A"
+  },
+  "63": {
+    "lhs": "u",
+    "network": "System",
+    "rhs": " Instantiate ( u , value )"
+  },
+  "64": {
+    "lhs": "M_A",
+    "network": "System",
+    "rhs": " Stack ( M_A_alpha , M_A_beta )"
+  },
+  "65": {
+    "lhs": "M_B",
+    "network": "System",
+    "rhs": " Stack ( M_B_gamma , M_B_delta )"
+  },
+  "66": {
+    "lhs": "M",
+    "network": "System",
+    "rhs": " Stack ( M_A , M_B )"
+  },
+  "67": {
+    "lhs": "M_A",
+    "network": "Properties >>> System",
+    "rhs": " M_A"
+  },
+  "68": {
+    "lhs": "M_B",
+    "network": "Properties >>> System",
+    "rhs": " M_B"
+  },
+  "69": {
+    "lhs": "M",
+    "network": "Properties >>> System",
+    "rhs": " M"
+  },
+  "70": {
+    "lhs": "u",
+    "network": "Control >>> System",
+    "rhs": " y"
   }
 }

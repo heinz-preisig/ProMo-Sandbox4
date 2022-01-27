@@ -63,7 +63,7 @@
     "variable_ID": 25,
     "lhs": "fx_A_alpha",
     "network": "System",
-    "rhs": "F * (( ( K_A_alpha )'  .* D )'  * pi_A_alpha)"
+    "rhs": "F * (( ( u .* K_A_alpha )'  .* D )'  * pi_A_alpha)"
   },
   "12": {
     "variable_ID": 26,
@@ -286,5 +286,53 @@
     "lhs": "m",
     "network": "System >>> Control",
     "rhs": "measure_set_A"
+  },
+  "63": {
+    "variable_ID": 76,
+    "lhs": "u",
+    "network": "System",
+    "rhs": "Instantiate(u, value)"
+  },
+  "64": {
+    "variable_ID": 77,
+    "lhs": "M_A",
+    "network": "System",
+    "rhs": "Stack(M_A_alpha,M_A_beta)"
+  },
+  "65": {
+    "variable_ID": 78,
+    "lhs": "M_B",
+    "network": "System",
+    "rhs": "Stack(M_B_gamma,M_B_delta)"
+  },
+  "66": {
+    "variable_ID": 79,
+    "lhs": "M",
+    "network": "System",
+    "rhs": "Stack(M_A,M_B)"
+  },
+  "67": {
+    "variable_ID": 77,
+    "lhs": "M_A",
+    "network": "Properties >>> System",
+    "rhs": "M_A"
+  },
+  "68": {
+    "variable_ID": 78,
+    "lhs": "M_B",
+    "network": "Properties >>> System",
+    "rhs": "M_B"
+  },
+  "69": {
+    "variable_ID": 79,
+    "lhs": "M",
+    "network": "Properties >>> System",
+    "rhs": "M"
+  },
+  "70": {
+    "variable_ID": 76,
+    "lhs": "u",
+    "network": "Control >>> System",
+    "rhs": "y"
   }
 }

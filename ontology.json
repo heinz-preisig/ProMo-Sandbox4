@@ -58,7 +58,8 @@
           "frame",
           "state",
           "constant",
-          "differentialState"
+          "differentialState",
+          "propertyOut"
         ]
       },
       "children": [],
@@ -105,7 +106,8 @@
           "state",
           "constant",
           "differentialState",
-          "secondaryState"
+          "secondaryState",
+          "propertyIn"
         ]
       },
       "children": [],
@@ -217,6 +219,8 @@
       "frame",
       "measureIn",
       "network",
+      "propertyIn",
+      "propertyOut",
       "state"
     ]
   },

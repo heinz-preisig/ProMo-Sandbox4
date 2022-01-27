@@ -8,7 +8,7 @@
 8 :: pi_A_beta =  M_A_beta . x
 9 :: pi_B_gamma =  M_B_gamma . y
 10 :: pi_B_delta =  M_B_delta . y
-11 :: fx_A_alpha =  F | A | ( K_A_alpha . D | N | pi_A_alpha )
+11 :: fx_A_alpha =  F | A | ( u . K_A_alpha . D | N | pi_A_alpha )
 12 :: fx_A_beta =  F | A | ( K_A_beta . D | N | pi_A_beta )
 14 :: fy_B_gamma =  F | A | ( K_B_gamma . D | N | pi_B_gamma )
 15 :: fy_B_delta =  F | A | ( K_B_delta . D | N | pi_B_delta )
@@ -46,3 +46,11 @@
 60 :: measure_set_A =  I_measure | N | measure
 61 :: m =  Instantiate ( m , value )
 62 :: m =  measure_set_A
+63 :: u =  Instantiate ( u , value )
+64 :: M_A =  Stack ( M_A_alpha , M_A_beta )
+65 :: M_B =  Stack ( M_B_gamma , M_B_delta )
+66 :: M =  Stack ( M_A , M_B )
+67 :: M_A =  M_A
+68 :: M_B =  M_B
+69 :: M =  M
+70 :: u =  y

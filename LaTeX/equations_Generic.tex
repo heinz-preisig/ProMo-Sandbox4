@@ -53,7 +53,7 @@ no & equation &documentation &layer \\\hline\hline
     \begin{lay}effort for B mechanism delta\end{lay} &
     \begin{lay}System\end{lay} \\
 \hyperlink{"v:25"}{ 11 }\hypertarget{"e:11"}{  } &
-    \begin{eq}{{\hat{x}^{A,\alpha}}}{_{N}} := {F}{_{N, A}} \stackrel{A}{\,\star\,} \left({{K^{A,\alpha}}}{_{A}} \, . \, {D}{_{N, A}} \stackrel{N}{\,\star\,} {{\pi^{A,\alpha}}}{_{N}}\right)\end{eq} &
+    \begin{eq}{{\hat{x}^{A,\alpha}}}{_{N}} := {F}{_{N, A}} \stackrel{A}{\,\star\,} \left({u}{_{A}} \, . \, {{K^{A,\alpha}}}{_{A}} \, . \, {D}{_{N, A}} \stackrel{N}{\,\star\,} {{\pi^{A,\alpha}}}{_{N}}\right)\end{eq} &
     \begin{lay}netflow of token A due to mechanism alpha\end{lay} &
     \begin{lay}System\end{lay} \\
 \hyperlink{"v:26"}{ 12 }\hypertarget{"e:12"}{  } &
@@ -200,5 +200,21 @@ no & equation &documentation &layer \\\hline\hline
     \begin{eq}{m}{_{A}} := \text{Instantiate}({m}{_{A}}, {{\#}}{_{}})\end{eq} &
     \begin{lay}measurement\end{lay} &
     \begin{lay}Control\end{lay} \\
+\hyperlink{"v:76"}{ 63 }\hypertarget{"e:63"}{  } &
+    \begin{eq}{u}{_{A}} := \text{Instantiate}({u}{_{A}}, {{\#}}{_{}})\end{eq} &
+    \begin{lay}[0-1]-normed control signal\end{lay} &
+    \begin{lay}System\end{lay} \\
+\hyperlink{"v:77"}{ 64 }\hypertarget{"e:64"}{  } &
+    \begin{eq}{{M^A}}{_{N}} := \text{Stack}\left( {{M^{A,\alpha}}}{_{N}},{{M^{A,\beta}}}{_{N}} \right)\end{eq} &
+    \begin{lay}stack of M matrices for token A\end{lay} &
+    \begin{lay}System\end{lay} \\
+\hyperlink{"v:78"}{ 65 }\hypertarget{"e:65"}{  } &
+    \begin{eq}{{M^B}}{_{N}} := \text{Stack}\left( {{M^{B,\gamma}}}{_{N}},{{M^{B,\delta}}}{_{N}} \right)\end{eq} &
+    \begin{lay}stack of M matrices for token B\end{lay} &
+    \begin{lay}System\end{lay} \\
+\hyperlink{"v:79"}{ 66 }\hypertarget{"e:66"}{  } &
+    \begin{eq}{M}{_{N}} := \text{Stack}\left( {{M^A}}{_{N}},{{M^B}}{_{N}} \right)\end{eq} &
+    \begin{lay}stack of all M matrices\end{lay} &
+    \begin{lay}System\end{lay} \\
 \hline
 \end{longtable}
