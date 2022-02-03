@@ -8,10 +8,10 @@
 8 :: pi_A_beta =  M_A_beta . x
 9 :: pi_B_gamma =  M_B_gamma . y
 10 :: pi_B_delta =  M_B_delta . y
-11 :: fx_A_alpha =  F | A | ( u . K_A_alpha . D | N | pi_A_alpha )
-12 :: fx_A_beta =  F | A | ( K_A_beta . D | N | pi_A_beta )
-14 :: fy_B_gamma =  F | A | ( K_B_gamma . D | N | pi_B_gamma )
-15 :: fy_B_delta =  F | A | ( K_B_delta . D | N | pi_B_delta )
+11 :: fx_A_alpha =  F | A | fx_A_alpha_m
+12 :: fx_A_beta =  F | A | fx_A_beta_m
+14 :: fy_B_gamma =  F | A | fy_B_gamma_m
+15 :: fy_B_delta =  F | A | fy_B_delta_m
 16 :: dx =  fx_A_alpha + fx_A_beta
 17 :: dy =  fy_B_gamma + fy_B_delta
 20 :: x =  Integral ( dx :: t in [ to , te ] ) + xo
@@ -54,3 +54,7 @@
 68 :: M_B =  M_B
 69 :: M =  M
 70 :: u =  y
+75 :: fx_A_alpha_m =  u . K_A_alpha . D | N | pi_A_alpha
+76 :: fx_A_beta_m =  K_A_beta . D | N | pi_A_beta
+77 :: fy_B_gamma_m =  K_B_gamma . D | N | pi_B_gamma
+78 :: fy_B_delta_m =  K_B_delta . D | N | pi_B_delta

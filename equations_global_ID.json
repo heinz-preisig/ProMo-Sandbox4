@@ -63,25 +63,25 @@
     "variable_ID": 25,
     "lhs": " V_25",
     "network": "System",
-    "rhs": " V_8  O_5  I_2 O_5  D_0 V_76 O_4 V_13 O_4 V_36  O_5  I_1 O_5  V_21 D_1"
+    "rhs": " V_8  O_5  I_2 O_5  V_80"
   },
   "12": {
     "variable_ID": 26,
     "lhs": " V_26",
     "network": "System",
-    "rhs": " V_8  O_5  I_2 O_5  D_0 V_14 O_4 V_36  O_5  I_1 O_5  V_22 D_1"
+    "rhs": " V_8  O_5  I_2 O_5  V_81"
   },
   "14": {
     "variable_ID": 27,
     "lhs": " V_27",
     "network": "System",
-    "rhs": " V_8  O_5  I_2 O_5  D_0 V_15 O_4 V_36  O_5  I_1 O_5  V_23 D_1"
+    "rhs": " V_8  O_5  I_2 O_5  V_82"
   },
   "15": {
     "variable_ID": 28,
     "lhs": " V_28",
     "network": "System",
-    "rhs": " V_8  O_5  I_2 O_5  D_0 V_16 O_4 V_36  O_5  I_1 O_5  V_24 D_1"
+    "rhs": " V_8  O_5  I_2 O_5  V_83"
   },
   "16": {
     "variable_ID": 29,
@@ -315,24 +315,48 @@
     "variable_ID": 77,
     "lhs": " V_77",
     "network": "Properties >>> System",
-    "rhs": " V_77"
+    "rhs": " V_69"
   },
   "68": {
     "variable_ID": 78,
     "lhs": " V_78",
     "network": "Properties >>> System",
-    "rhs": " V_78"
+    "rhs": " V_70"
   },
   "69": {
     "variable_ID": 79,
     "lhs": " V_79",
     "network": "Properties >>> System",
-    "rhs": " V_79"
+    "rhs": " V_71"
   },
   "70": {
     "variable_ID": 76,
     "lhs": " V_76",
     "network": "Control >>> System",
-    "rhs": " V_10"
+    "rhs": " V_67"
+  },
+  "75": {
+    "variable_ID": 80,
+    "lhs": " V_80",
+    "network": "System",
+    "rhs": " V_76 O_4 V_13 O_4 V_36  O_5  I_1 O_5  V_21"
+  },
+  "76": {
+    "variable_ID": 81,
+    "lhs": " V_81",
+    "network": "System",
+    "rhs": " V_14 O_4 V_36  O_5  I_1 O_5  V_22"
+  },
+  "77": {
+    "variable_ID": 82,
+    "lhs": " V_82",
+    "network": "System",
+    "rhs": " V_15 O_4 V_36  O_5  I_1 O_5  V_23"
+  },
+  "78": {
+    "variable_ID": 83,
+    "lhs": " V_83",
+    "network": "System",
+    "rhs": " V_16 O_4 V_36  O_5  I_1 O_5  V_24"
   }
 }

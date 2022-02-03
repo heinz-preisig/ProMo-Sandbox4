@@ -52,22 +52,22 @@
   "11": {
     "lhs": "fx_A_alpha",
     "network": "System",
-    "rhs": " F | A | ( u . K_A_alpha . D | N | pi_A_alpha )"
+    "rhs": " F | A | fx_A_alpha_m"
   },
   "12": {
     "lhs": "fx_A_beta",
     "network": "System",
-    "rhs": " F | A | ( K_A_beta . D | N | pi_A_beta )"
+    "rhs": " F | A | fx_A_beta_m"
   },
   "14": {
     "lhs": "fy_B_gamma",
     "network": "System",
-    "rhs": " F | A | ( K_B_gamma . D | N | pi_B_gamma )"
+    "rhs": " F | A | fy_B_gamma_m"
   },
   "15": {
     "lhs": "fy_B_delta",
     "network": "System",
-    "rhs": " F | A | ( K_B_delta . D | N | pi_B_delta )"
+    "rhs": " F | A | fy_B_delta_m"
   },
   "16": {
     "lhs": "dx",
@@ -278,5 +278,25 @@
     "lhs": "u",
     "network": "Control >>> System",
     "rhs": " y"
+  },
+  "75": {
+    "lhs": "fx_A_alpha_m",
+    "network": "System",
+    "rhs": " u . K_A_alpha . D | N | pi_A_alpha"
+  },
+  "76": {
+    "lhs": "fx_A_beta_m",
+    "network": "System",
+    "rhs": " K_A_beta . D | N | pi_A_beta"
+  },
+  "77": {
+    "lhs": "fy_B_gamma_m",
+    "network": "System",
+    "rhs": " K_B_gamma . D | N | pi_B_gamma"
+  },
+  "78": {
+    "lhs": "fy_B_delta_m",
+    "network": "System",
+    "rhs": " K_B_delta . D | N | pi_B_delta"
   }
 }

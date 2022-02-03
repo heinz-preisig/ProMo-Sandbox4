@@ -280,7 +280,7 @@
     "25": {
       "aliases": "{'global_ID': ' V_25', 'python': 'fx_A_alpha', 'cpp': 'fx_A_alpha', 'matlab': 'fx_A_alpha', 'latex': '{\\\\hat{x}^{A,\\\\alpha}}', 'internal_code': 'fx_A_alpha'}",
       "doc": "netflow of token A due to mechanism alpha",
-      "equations": "{11: {'rhs': ' V_8  O_5  I_2 O_5  D_0 V_76 O_4 V_13 O_4 V_36  O_5  I_1 O_5  V_21 D_1', 'type': 'generic', 'doc': 'netflow of token A due to mechanism alpha', 'network': 'System', 'incidence_list': ['13', '21', '36', '76', '8']}}",
+      "equations": "{11: {'rhs': ' V_8  O_5  I_2 O_5  V_80', 'type': 'generic', 'doc': 'netflow of token A due to mechanism alpha', 'network': 'System', 'incidence_list': ['8', '80']}}",
       "index_structures": "[1]",
       "label": "fx_A_alpha",
       "network": "System",
@@ -292,7 +292,7 @@
     "26": {
       "aliases": "{'global_ID': ' V_26', 'python': 'fx_A_beta', 'cpp': 'fx_A_beta', 'matlab': 'fx_A_beta', 'latex': '{\\\\hat{x}^{A,\\\\beta}}', 'internal_code': 'fx_A_beta'}",
       "doc": "net flow of token A due to mechanism beta",
-      "equations": "{12: {'rhs': ' V_8  O_5  I_2 O_5  D_0 V_14 O_4 V_36  O_5  I_1 O_5  V_22 D_1', 'type': 'generic', 'doc': 'net flow of token A due to mechanism beta', 'network': 'System', 'incidence_list': ['14', '22', '36', '8']}}",
+      "equations": "{12: {'rhs': ' V_8  O_5  I_2 O_5  V_81', 'type': 'generic', 'doc': 'net flow of token A due to mechanism beta', 'network': 'System', 'incidence_list': ['8', '81']}}",
       "index_structures": "[1]",
       "label": "fx_A_beta",
       "network": "System",
@@ -304,7 +304,7 @@
     "27": {
       "aliases": "{'global_ID': ' V_27', 'python': 'fy_B_gamma', 'cpp': 'fy_B_gamma', 'matlab': 'fy_B_gamma', 'latex': '{\\\\hat{y}^{B,\\\\gamma}}', 'internal_code': 'fy_B_gamma'}",
       "doc": "netflow of token B due to mechanism gamma",
-      "equations": "{14: {'rhs': ' V_8  O_5  I_2 O_5  D_0 V_15 O_4 V_36  O_5  I_1 O_5  V_23 D_1', 'type': 'generic', 'doc': 'netflow of token B due to mechanism gamma', 'network': 'System', 'incidence_list': ['15', '23', '36', '8']}}",
+      "equations": "{14: {'rhs': ' V_8  O_5  I_2 O_5  V_82', 'type': 'generic', 'doc': 'netflow of token B due to mechanism gamma', 'network': 'System', 'incidence_list': ['8', '82']}}",
       "index_structures": "[1]",
       "label": "fy_B_gamma",
       "network": "System",
@@ -316,7 +316,7 @@
     "28": {
       "aliases": "{'global_ID': ' V_28', 'python': 'fy_B_delta', 'cpp': 'fy_B_delta', 'matlab': 'fy_B_delta', 'latex': '{\\\\hat{y}^{B,\\\\delta}}', 'internal_code': 'fy_B_delta'}",
       "doc": "netflow of token B due to mechansim beta",
-      "equations": "{15: {'rhs': ' V_8  O_5  I_2 O_5  D_0 V_16 O_4 V_36  O_5  I_1 O_5  V_24 D_1', 'type': 'generic', 'doc': 'netflow of token B due to mechansim beta', 'network': 'System', 'incidence_list': ['16', '24', '36', '8']}}",
+      "equations": "{15: {'rhs': ' V_8  O_5  I_2 O_5  V_83', 'type': 'generic', 'doc': 'netflow of token B due to mechansim beta', 'network': 'System', 'incidence_list': ['8', '83']}}",
       "index_structures": "[1]",
       "label": "fy_B_delta",
       "network": "System",
@@ -768,6 +768,54 @@
       "tokens": "[]",
       "type": "propertyIn",
       "units": "[0, 0, 0, 0, 0, 0, 0, 0]"
+    },
+    "80": {
+      "aliases": "{'global_ID': ' V_80', 'python': 'fx_A_alpha_m', 'cpp': 'fx_A_alpha_m', 'matlab': 'fx_A_alpha_m', 'latex': '{\\\\hat{x}^{A,\\\\alpha}}', 'internal_code': 'fx_A_alpha_m'}",
+      "doc": "flow of token A due to mechanism alpha",
+      "equations": "{75: {'rhs': ' V_76 O_4 V_13 O_4 V_36  O_5  I_1 O_5  V_21', 'type': 'generic', 'doc': 'flow of token A due to mechanism alpha', 'network': 'System', 'incidence_list': ['13', '21', '36', '76']}}",
+      "index_structures": "[2]",
+      "label": "fx_A_alpha_m",
+      "network": "System",
+      "port_variable": "False",
+      "tokens": "[]",
+      "type": "transport",
+      "units": "[-1, 1, 0, 0, 0, 0, 0, 0]"
+    },
+    "81": {
+      "aliases": "{'global_ID': ' V_81', 'python': 'fx_A_beta_m', 'cpp': 'fx_A_beta_m', 'matlab': 'fx_A_beta_m', 'latex': '{\\\\hat{x}^{A,\\\\beta}}', 'internal_code': 'fx_A_beta_m'}",
+      "doc": "flow of token A doe to mechanism beta",
+      "equations": "{76: {'rhs': ' V_14 O_4 V_36  O_5  I_1 O_5  V_22', 'type': 'generic', 'doc': 'flow of token A doe to mechanism beta', 'network': 'System', 'incidence_list': ['14', '22', '36']}}",
+      "index_structures": "[2]",
+      "label": "fx_A_beta_m",
+      "network": "System",
+      "port_variable": "False",
+      "tokens": "[]",
+      "type": "transport",
+      "units": "[-1, 1, 0, 0, 0, 0, 0, 0]"
+    },
+    "82": {
+      "aliases": "{'global_ID': ' V_82', 'python': 'fy_B_gamma_m', 'cpp': 'fy_B_gamma_m', 'matlab': 'fy_B_gamma_m', 'latex': '{\\\\hat{y}^{B,\\\\gamma}}', 'internal_code': 'fy_B_gamma_m'}",
+      "doc": "flow of token B due to mechanism gamma",
+      "equations": "{77: {'rhs': ' V_15 O_4 V_36  O_5  I_1 O_5  V_23', 'type': 'generic', 'doc': 'flow of token B due to mechanism gamma', 'network': 'System', 'incidence_list': ['15', '23', '36']}}",
+      "index_structures": "[2]",
+      "label": "fy_B_gamma_m",
+      "network": "System",
+      "port_variable": "False",
+      "tokens": "[]",
+      "type": "transport",
+      "units": "[-1, 0, 0, 0, 0, 0, 0, 0]"
+    },
+    "83": {
+      "aliases": "{'global_ID': ' V_83', 'python': 'fy_B_delta_m', 'cpp': 'fy_B_delta_m', 'matlab': 'fy_B_delta_m', 'latex': '{\\\\hat{y}^{B,\\\\delta}}', 'internal_code': 'fy_B_delta_m'}",
+      "doc": "flow of token B due to mechansim delta",
+      "equations": "{78: {'rhs': ' V_16 O_4 V_36  O_5  I_1 O_5  V_24', 'type': 'generic', 'doc': 'flow of token B due to mechansim delta', 'network': 'System', 'incidence_list': ['16', '24', '36']}}",
+      "index_structures": "[2]",
+      "label": "fy_B_delta_m",
+      "network": "System",
+      "port_variable": "False",
+      "tokens": "[]",
+      "type": "transport",
+      "units": "[-1, 0, 0, 0, 0, 0, 0, 0]"
     }
   },
   "indices": {
@@ -993,7 +1041,7 @@
     }
   },
   "Ontology_global_IDs": {
-    "variable": 79,
-    "equation": 70
+    "variable": 83,
+    "equation": 78
   }
 }

@@ -60,9 +60,9 @@
             "enabled": {
               "action": [],
               "colour": [
-                115,
-                210,
-                22,
+                0,
+                0,
+                0,
                 255
               ],
               "layer": "arc",
@@ -92,16 +92,16 @@
             "enabled": {
               "action": [],
               "colour": [
-                138,
-                226,
-                52,
-                255
+                255,
+                255,
+                255,
+                100
               ],
               "layer": "mainPanel",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "style": "dotted",
+              "style": "no pen",
               "width": 2
             },
             "selected": {
@@ -116,7 +116,7 @@
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "style": "dotted",
+              "style": "no pen",
               "width": 2
             }
           },
@@ -152,7 +152,7 @@
               "width": 2
             }
           },
-          "tokenA|mechansimB|lumped": {
+          "tokenA|mechanismB|lumped": {
             "enabled": {
               "action": [],
               "colour": [
@@ -738,9 +738,9 @@
             "enabled": {
               "action": [],
               "colour": [
-                115,
-                210,
-                22,
+                0,
+                0,
+                0,
                 255
               ],
               "layer": "arc",
@@ -755,16 +755,16 @@
             "enabled": {
               "action": [],
               "colour": [
-                138,
-                226,
-                52,
-                255
+                255,
+                255,
+                255,
+                100
               ],
               "layer": "mainPanel",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "style": "dotted",
+              "style": "no pen",
               "width": 2
             }
           },
@@ -785,7 +785,7 @@
               "width": 2
             }
           },
-          "tokenA|mechansimB|lumped": {
+          "tokenA|mechanismB|lumped": {
             "enabled": {
               "action": [],
               "colour": [
@@ -1102,9 +1102,7 @@
               "width": 35
             },
             "enabled": {
-              "action": [
-                "inject"
-              ],
+              "action": [],
               "colour": [
                 186,
                 189,
@@ -1151,9 +1149,7 @@
               "width": 30
             },
             "enabled": {
-              "action": [
-                "inject"
-              ],
+              "action": [],
               "colour": [
                 239,
                 41,
@@ -1200,9 +1196,7 @@
               "width": 20
             },
             "enabled": {
-              "action": [
-                "inject"
-              ],
+              "action": [],
               "colour": [
                 85,
                 87,
@@ -1399,9 +1393,9 @@
             "enabled": {
               "action": [],
               "colour": [
-                115,
-                210,
-                22,
+                0,
+                0,
+                0,
                 255
               ],
               "layer": "arc",
@@ -1446,16 +1440,16 @@
             "enabled": {
               "action": [],
               "colour": [
-                138,
-                226,
-                52,
-                255
+                255,
+                255,
+                255,
+                100
               ],
               "layer": "mainPanel",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "style": "dotted",
+              "style": "no pen",
               "width": 2
             },
             "open": {
@@ -1470,7 +1464,7 @@
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "style": "dotted",
+              "style": "no pen",
               "width": 2
             },
             "selected": {
@@ -1485,7 +1479,7 @@
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "style": "dotted",
+              "style": "no pen",
               "width": 2
             }
           },
@@ -1536,7 +1530,7 @@
               "width": 2
             }
           },
-          "tokenA|mechansimB|lumped": {
+          "tokenA|mechanismB|lumped": {
             "enabled": {
               "action": [],
               "colour": [

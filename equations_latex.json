@@ -63,25 +63,25 @@
     "variable_ID": 25,
     "lhs": "{{\\hat{x}^{A,\\alpha}}}{_{N}}",
     "network": "System",
-    "rhs": "{F}{_{N, A}} \\stackrel{A}{\\,\\star\\,} \\left({u}{_{A}} \\, . \\, {{K^{A,\\alpha}}}{_{A}} \\, . \\, {D}{_{N, A}} \\stackrel{N}{\\,\\star\\,} {{\\pi^{A,\\alpha}}}{_{N}}\\right)"
+    "rhs": "{F}{_{N, A}} \\stackrel{A}{\\,\\star\\,} {{\\hat{x}^{A,\\alpha}}}{_{A}}"
   },
   "12": {
     "variable_ID": 26,
     "lhs": "{{\\hat{x}^{A,\\beta}}}{_{N}}",
     "network": "System",
-    "rhs": "{F}{_{N, A}} \\stackrel{A}{\\,\\star\\,} \\left({{K^{A,\\beta}}}{_{A}} \\, . \\, {D}{_{N, A}} \\stackrel{N}{\\,\\star\\,} {{\\pi^{A,\\beta}}}{_{N}}\\right)"
+    "rhs": "{F}{_{N, A}} \\stackrel{A}{\\,\\star\\,} {{\\hat{x}^{A,\\beta}}}{_{A}}"
   },
   "14": {
     "variable_ID": 27,
     "lhs": "{{\\hat{y}^{B,\\gamma}}}{_{N}}",
     "network": "System",
-    "rhs": "{F}{_{N, A}} \\stackrel{A}{\\,\\star\\,} \\left({{K^{B,\\gamma}}}{_{A}} \\, . \\, {D}{_{N, A}} \\stackrel{N}{\\,\\star\\,} {{\\pi^{B,\\gamma}}}{_{N}}\\right)"
+    "rhs": "{F}{_{N, A}} \\stackrel{A}{\\,\\star\\,} {{\\hat{y}^{B,\\gamma}}}{_{A}}"
   },
   "15": {
     "variable_ID": 28,
     "lhs": "{{\\hat{y}^{B,\\delta}}}{_{N}}",
     "network": "System",
-    "rhs": "{F}{_{N, A}} \\stackrel{A}{\\,\\star\\,} \\left({{K^{B,\\delta}}}{_{A}} \\, . \\, {D}{_{N, A}} \\stackrel{N}{\\,\\star\\,} {{\\pi^{B,\\delta}}}{_{N}}\\right)"
+    "rhs": "{F}{_{N, A}} \\stackrel{A}{\\,\\star\\,} {{\\hat{y}^{B,\\delta}}}{_{A}}"
   },
   "16": {
     "variable_ID": 29,
@@ -315,13 +315,13 @@
     "variable_ID": 77,
     "lhs": "{{M^A}}{_{N}}",
     "network": "Properties >>> System",
-    "rhs": "{{M^A}}{_{N}}"
+    "rhs": "{{M^{A}}}{_{N}}"
   },
   "68": {
     "variable_ID": 78,
     "lhs": "{{M^B}}{_{N}}",
     "network": "Properties >>> System",
-    "rhs": "{{M^B}}{_{N}}"
+    "rhs": "{{M^{B}}}{_{N}}"
   },
   "69": {
     "variable_ID": 79,
@@ -333,6 +333,30 @@
     "variable_ID": 76,
     "lhs": "{u}{_{A}}",
     "network": "Control >>> System",
-    "rhs": "{y}{_{N}}"
+    "rhs": "{y}{_{A}}"
+  },
+  "75": {
+    "variable_ID": 80,
+    "lhs": "{{\\hat{x}^{A,\\alpha}}}{_{A}}",
+    "network": "System",
+    "rhs": "{u}{_{A}} \\, . \\, {{K^{A,\\alpha}}}{_{A}} \\, . \\, {D}{_{N, A}} \\stackrel{N}{\\,\\star\\,} {{\\pi^{A,\\alpha}}}{_{N}}"
+  },
+  "76": {
+    "variable_ID": 81,
+    "lhs": "{{\\hat{x}^{A,\\beta}}}{_{A}}",
+    "network": "System",
+    "rhs": "{{K^{A,\\beta}}}{_{A}} \\, . \\, {D}{_{N, A}} \\stackrel{N}{\\,\\star\\,} {{\\pi^{A,\\beta}}}{_{N}}"
+  },
+  "77": {
+    "variable_ID": 82,
+    "lhs": "{{\\hat{y}^{B,\\gamma}}}{_{A}}",
+    "network": "System",
+    "rhs": "{{K^{B,\\gamma}}}{_{A}} \\, . \\, {D}{_{N, A}} \\stackrel{N}{\\,\\star\\,} {{\\pi^{B,\\gamma}}}{_{N}}"
+  },
+  "78": {
+    "variable_ID": 83,
+    "lhs": "{{\\hat{y}^{B,\\delta}}}{_{A}}",
+    "network": "System",
+    "rhs": "{{K^{B,\\delta}}}{_{A}} \\, . \\, {D}{_{N, A}} \\stackrel{N}{\\,\\star\\,} {{\\pi^{B,\\delta}}}{_{N}}"
   }
 }
