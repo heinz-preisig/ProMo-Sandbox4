@@ -333,7 +333,7 @@
     "variable_ID": 76,
     "lhs": "{u}{_{A}}",
     "network": "Control >>> System",
-    "rhs": "{y}{_{A}}"
+    "rhs": "{y}{_{N}}"
   },
   "75": {
     "variable_ID": 80,
@@ -358,5 +358,29 @@
     "lhs": "{{\\hat{y}^{B,\\delta}}}{_{A}}",
     "network": "System",
     "rhs": "{{K^{B,\\delta}}}{_{A}} \\, . \\, {D}{_{N, A}} \\stackrel{N}{\\,\\star\\,} {{\\pi^{B,\\delta}}}{_{N}}"
+  },
+  "79": {
+    "variable_ID": 80,
+    "lhs": "{{\\hat{x}^{A,\\alpha}}}{_{A}}",
+    "network": "System",
+    "rhs": "\\text{Instantiate}({{\\hat{x}^{A,\\alpha}}}{_{A}}, {{\\#}}{_{}})"
+  },
+  "80": {
+    "variable_ID": 81,
+    "lhs": "{{\\hat{x}^{A,\\beta}}}{_{A}}",
+    "network": "System",
+    "rhs": "\\text{Instantiate}({{\\hat{x}^{A,\\beta}}}{_{A}}, {{\\#}}{_{}})"
+  },
+  "81": {
+    "variable_ID": 82,
+    "lhs": "{{\\hat{y}^{B,\\gamma}}}{_{A}}",
+    "network": "System",
+    "rhs": "\\text{Instantiate}({{\\hat{y}^{B,\\gamma}}}{_{A}}, -)"
+  },
+  "82": {
+    "variable_ID": 83,
+    "lhs": "{{\\hat{y}^{B,\\delta}}}{_{A}}",
+    "network": "System",
+    "rhs": "\\text{Instantiate}({{\\hat{y}^{B,\\delta}}}{_{A}}, {{\\#}}{_{}})"
   }
 }

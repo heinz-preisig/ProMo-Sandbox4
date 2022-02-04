@@ -81,7 +81,42 @@
 \endfoot
 \hline
 \endlastfoot
-29 &18 &- &\begin{eq}{{M^{A,\beta}}}{_{N}} :: \text{port variable}\end{eq} & \\28 &17 &- &\begin{eq}{{M^{A,\alpha}}}{_{N}} :: \text{port variable}\end{eq} & \\27 &20 &- &\begin{eq}{{M^{B,\delta}}}{_{N}} :: \text{port variable}\end{eq} & \\26 &19 &- &\begin{eq}{{M^{B,\gamma}}}{_{N}} :: \text{port variable}\end{eq} & \\25 &14 &- &\begin{eq}{{K^{A,\beta}}}{_{A}} :: \text{port variable}\end{eq} & \\24 &13 &- &\begin{eq}{{K^{A,\alpha}}}{_{A}} :: \text{port variable}\end{eq} & \\23 &16 &- &\begin{eq}{{K^{B,\delta}}}{_{A}} :: \text{port variable}\end{eq} & \\22 &8 &- &\begin{eq}{F}{_{N, A}} :: \text{port variable}\end{eq} & \\21 &36 &- &\begin{eq}{D}{_{N, A}} :: \text{port variable}\end{eq} & \\20 &15 &- &\begin{eq}{{K^{B,\gamma}}}{_{A}} :: \text{port variable}\end{eq} & \\19 &3 &- &\begin{eq}{{\#}}{_{}} :: \text{port variable}\end{eq} & \\18 &1 &- &\begin{eq}{t}{_{}} :: \text{port variable}\end{eq} & \\17 &22 &8 &\begin{eq}{{\pi^{A,\beta}}}{_{N}} := {{M^{A,\beta}}}{_{N}} \, . \, {x}{_{N}}\end{eq} & \\16 &76 &63 &\begin{eq}{u}{_{A}} := \text{Instantiate}({u}{_{A}}, {{\#}}{_{}})\end{eq} & \\15 &21 &7 &\begin{eq}{{\pi^{A,\alpha}}}{_{N}} := {{M^{A,\alpha}}}{_{N}} \, . \, {x}{_{N}}\end{eq} & \\14 &24 &10 &\begin{eq}{{\pi^{B,\delta}}}{_{N}} := {{M^{B,\delta}}}{_{N}} \, . \, {y}{_{N}}\end{eq} & \\13 &23 &9 &\begin{eq}{{\pi^{B,\gamma}}}{_{N}} := {{M^{B,\gamma}}}{_{N}} \, . \, {y}{_{N}}\end{eq} & \\12 &26 &12 &\begin{eq}{{\hat{x}^{A,\beta}}}{_{N}} := {F}{_{N, A}} \stackrel{A}{\,\star\,} \left({{K^{A,\beta}}}{_{A}} \, . \, {D}{_{N, A}} \stackrel{N}{\,\star\,} {{\pi^{A,\beta}}}{_{N}}\right)\end{eq} & \\11 &25 &11 &\begin{eq}{{\hat{x}^{A,\alpha}}}{_{N}} := {F}{_{N, A}} \stackrel{A}{\,\star\,} \left({u}{_{A}} \, . \, {{K^{A,\alpha}}}{_{A}} \, . \, {D}{_{N, A}} \stackrel{N}{\,\star\,} {{\pi^{A,\alpha}}}{_{N}}\right)\end{eq} & \\10 &28 &15 &\begin{eq}{{\hat{y}^{B,\delta}}}{_{N}} := {F}{_{N, A}} \stackrel{A}{\,\star\,} \left({{K^{B,\delta}}}{_{A}} \, . \, {D}{_{N, A}} \stackrel{N}{\,\star\,} {{\pi^{B,\delta}}}{_{N}}\right)\end{eq} & \\9 &27 &14 &\begin{eq}{{\hat{y}^{B,\gamma}}}{_{N}} := {F}{_{N, A}} \stackrel{A}{\,\star\,} \left({{K^{B,\gamma}}}{_{A}} \, . \, {D}{_{N, A}} \stackrel{N}{\,\star\,} {{\pi^{B,\gamma}}}{_{N}}\right)\end{eq} & \\8 &29 &16 &\begin{eq}{{\dot{x}}}{_{N}} := {{\hat{x}^{A,\alpha}}}{_{N}}  + {{\hat{x}^{A,\beta}}}{_{N}}\end{eq} & \\7 &11 &5 &\begin{eq}{{x^o}}{_{N}} := \text{Instantiate}({x}{_{N}}, {{\#}}{_{}})\end{eq} & \\6 &7 &4 &\begin{eq}{{t_e}}{_{}} := \text{Instantiate}({t}{_{}}, {{\#}}{_{}})\end{eq} & \\5 &6 &3 &\begin{eq}{{t_o}}{_{}} := \text{Instantiate}({t}{_{}}, {{\#}}{_{}})\end{eq} & \\4 &30 &17 &\begin{eq}{{\dot{y}}}{_{N}} := {{\hat{y}^{B,\gamma}}}{_{N}}  + {{\hat{y}^{B,\delta}}}{_{N}}\end{eq} & \\3 &12 &6 &\begin{eq}{{y^o}}{_{N}} := \text{Instantiate}({y}{_{N}}, {{\#}}{_{}})\end{eq} & \\2 &9 &20 &\begin{eq}{x}{_{N}} := \int_{ {{t_o}}{_{}} }^{ {{t_e}}{_{}} } \, {{\dot{x}}}{_{N}} \enskip d\,{t}{_{}}  + {{x^o}}{_{N}}\end{eq} & \\1 &10 &21 &\begin{eq}{y}{_{N}} := \int_{ {{t_o}}{_{}} }^{ {{t_e}}{_{}} } \, {{\dot{y}}}{_{N}} \enskip d\,{t}{_{}}  + {{y^o}}{_{N}}\end{eq} & \\0 &34 &31 &\begin{eq}{s}{_{}} := \text{MixedStack}\left( {x}{_{N}},{y}{_{N}} \right)\end{eq} & \\\end{longtable}
+33 &18 &- &\begin{eq}{{M^{A,\beta}}}{_{N}} :: \text{port variable}\end{eq} & \\
+32 &17 &- &\begin{eq}{{M^{A,\alpha}}}{_{N}} :: \text{port variable}\end{eq} & \\
+31 &20 &- &\begin{eq}{{M^{B,\delta}}}{_{N}} :: \text{port variable}\end{eq} & \\
+30 &3 &- &\begin{eq}{{\#}}{_{}} :: \text{port variable}\end{eq} & \\
+29 &19 &- &\begin{eq}{{M^{B,\gamma}}}{_{N}} :: \text{port variable}\end{eq} & \\
+28 &14 &- &\begin{eq}{{K^{A,\beta}}}{_{A}} :: \text{port variable}\end{eq} & \\
+27 &13 &- &\begin{eq}{{K^{A,\alpha}}}{_{A}} :: \text{port variable}\end{eq} & \\
+26 &16 &- &\begin{eq}{{K^{B,\delta}}}{_{A}} :: \text{port variable}\end{eq} & \\
+25 &36 &- &\begin{eq}{D}{_{N, A}} :: \text{port variable}\end{eq} & \\
+24 &15 &- &\begin{eq}{{K^{B,\gamma}}}{_{A}} :: \text{port variable}\end{eq} & \\
+23 &8 &- &\begin{eq}{F}{_{N, A}} :: \text{port variable}\end{eq} & \\
+22 &1 &- &\begin{eq}{t}{_{}} :: \text{port variable}\end{eq} & \\
+21 &22 &28 &\begin{eq}{{\pi^{A,\beta}}}{_{N}} := \text{Instantiate}({{\pi^{A,\beta}}}{_{N}}, {{\#}}{_{}})\end{eq} & \\
+20 &22 &8 &\begin{eq}{{\pi^{A,\beta}}}{_{N}} := {{M^{A,\beta}}}{_{N}} \, . \, {x}{_{N}}\end{eq} & \\
+19 &76 &63 &\begin{eq}{u}{_{A}} := \text{Instantiate}({u}{_{A}}, {{\#}}{_{}})\end{eq} & \\
+18 &21 &7 &\begin{eq}{{\pi^{A,\alpha}}}{_{N}} := {{M^{A,\alpha}}}{_{N}} \, . \, {x}{_{N}}\end{eq} & \\
+17 &21 &27 &\begin{eq}{{\pi^{A,\alpha}}}{_{N}} := \text{Instantiate}({{\pi^{A,\alpha}}}{_{N}}, {{\#}}{_{}})\end{eq} & \\
+16 &24 &30 &\begin{eq}{{\pi^{B,\delta}}}{_{N}} := \text{Instantiate}({{\pi^{B,\delta}}}{_{N}}, {{\#}}{_{}})\end{eq} & \\
+15 &24 &10 &\begin{eq}{{\pi^{B,\delta}}}{_{N}} := {{M^{B,\delta}}}{_{N}} \, . \, {y}{_{N}}\end{eq} & \\
+14 &23 &29 &\begin{eq}{{\pi^{B,\gamma}}}{_{N}} := \text{Instantiate}({{\pi^{B,\gamma}}}{_{N}}, {{\#}}{_{}})\end{eq} & \\
+13 &23 &9 &\begin{eq}{{\pi^{B,\gamma}}}{_{N}} := {{M^{B,\gamma}}}{_{N}} \, . \, {y}{_{N}}\end{eq} & \\
+12 &81 &76 &\begin{eq}{{\hat{x}^{A,\beta}}}{_{A}} := {{K^{A,\beta}}}{_{A}} \, . \, {D}{_{N, A}} \stackrel{N}{\,\star\,} {{\pi^{A,\beta}}}{_{N}}\end{eq} & \\
+11 &80 &75 &\begin{eq}{{\hat{x}^{A,\alpha}}}{_{A}} := {u}{_{A}} \, . \, {{K^{A,\alpha}}}{_{A}} \, . \, {D}{_{N, A}} \stackrel{N}{\,\star\,} {{\pi^{A,\alpha}}}{_{N}}\end{eq} & \\
+10 &83 &78 &\begin{eq}{{\hat{y}^{B,\delta}}}{_{A}} := {{K^{B,\delta}}}{_{A}} \, . \, {D}{_{N, A}} \stackrel{N}{\,\star\,} {{\pi^{B,\delta}}}{_{N}}\end{eq} & \\
+9 &82 &77 &\begin{eq}{{\hat{y}^{B,\gamma}}}{_{A}} := {{K^{B,\gamma}}}{_{A}} \, . \, {D}{_{N, A}} \stackrel{N}{\,\star\,} {{\pi^{B,\gamma}}}{_{N}}\end{eq} & \\
+8 &26 &12 &\begin{eq}{{\hat{x}^{A,\beta}}}{_{N}} := {F}{_{N, A}} \stackrel{A}{\,\star\,} {{\hat{x}^{A,\beta}}}{_{A}}\end{eq} & \\
+7 &25 &11 &\begin{eq}{{\hat{x}^{A,\alpha}}}{_{N}} := {F}{_{N, A}} \stackrel{A}{\,\star\,} {{\hat{x}^{A,\alpha}}}{_{A}}\end{eq} & \\
+6 &28 &15 &\begin{eq}{{\hat{y}^{B,\delta}}}{_{N}} := {F}{_{N, A}} \stackrel{A}{\,\star\,} {{\hat{y}^{B,\delta}}}{_{A}}\end{eq} & \\
+5 &27 &14 &\begin{eq}{{\hat{y}^{B,\gamma}}}{_{N}} := {F}{_{N, A}} \stackrel{A}{\,\star\,} {{\hat{y}^{B,\gamma}}}{_{A}}\end{eq} & \\
+4 &29 &16 &\begin{eq}{{\dot{x}}}{_{N}} := {{\hat{x}^{A,\alpha}}}{_{N}}  + {{\hat{x}^{A,\beta}}}{_{N}}\end{eq} & \\
+3 &30 &17 &\begin{eq}{{\dot{y}}}{_{N}} := {{\hat{y}^{B,\gamma}}}{_{N}}  + {{\hat{y}^{B,\delta}}}{_{N}}\end{eq} & \\
+2 &9 &20 &\begin{eq}{x}{_{N}} := \int_{ {{t_o}}{_{}} }^{ {{t_e}}{_{}} } \, {{\dot{x}}}{_{N}} \enskip d\,{t}{_{}}  + {{x^o}}{_{N}}\end{eq} & \\
+1 &10 &21 &\begin{eq}{y}{_{N}} := \int_{ {{t_o}}{_{}} }^{ {{t_e}}{_{}} } \, {{\dot{y}}}{_{N}} \enskip d\,{t}{_{}}  + {{y^o}}{_{N}}\end{eq} & \\
+0 &34 &31 &\begin{eq}{s}{_{}} := \text{MixedStack}\left( {x}{_{N}},{y}{_{N}} \right)\end{eq} & \\
+
+\end{longtable}
 
 \end{document}
 % ================================== end =========================================

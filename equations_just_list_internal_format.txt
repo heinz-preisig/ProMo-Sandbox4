@@ -58,3 +58,7 @@
 76 :: fx_A_beta_m =  K_A_beta . D | N | pi_A_beta
 77 :: fy_B_gamma_m =  K_B_gamma . D | N | pi_B_gamma
 78 :: fy_B_delta_m =  K_B_delta . D | N | pi_B_delta
+79 :: fx_A_alpha_m =  Instantiate ( fx_A_alpha_m , value )
+80 :: fx_A_beta_m =  Instantiate ( fx_A_beta_m , value )
+81 :: fy_B_gamma_m =  Instantiate ( fy_B_gamma_m  )
+82 :: fy_B_delta_m =  Instantiate ( fy_B_delta_m , value )

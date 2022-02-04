@@ -298,5 +298,25 @@
     "lhs": "fy_B_delta_m",
     "network": "System",
     "rhs": " K_B_delta . D | N | pi_B_delta"
+  },
+  "79": {
+    "lhs": "fx_A_alpha_m",
+    "network": "System",
+    "rhs": " Instantiate ( fx_A_alpha_m , value )"
+  },
+  "80": {
+    "lhs": "fx_A_beta_m",
+    "network": "System",
+    "rhs": " Instantiate ( fx_A_beta_m , value )"
+  },
+  "81": {
+    "lhs": "fy_B_gamma_m",
+    "network": "System",
+    "rhs": " Instantiate ( fy_B_gamma_m  )"
+  },
+  "82": {
+    "lhs": "fy_B_delta_m",
+    "network": "System",
+    "rhs": " Instantiate ( fy_B_delta_m , value )"
   }
 }

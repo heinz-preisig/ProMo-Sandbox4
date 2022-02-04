@@ -2182,6 +2182,13 @@ F_ID = "F_75"
 F_75 = onto.function( F_ID )
 F_75.is_function_of = incidence_list
 V_80.has_function.append( F_75 )
+incidence_list = []
+incidence_list.append( V_80 )
+incidence_list.append( V_3 )
+F_ID = "F_79"
+F_79 = onto.function( F_ID )
+F_79.is_function_of = incidence_list
+V_80.has_function.append( F_79 )
 #81
 
 V_81.has_function = []
@@ -2193,6 +2200,13 @@ F_ID = "F_76"
 F_76 = onto.function( F_ID )
 F_76.is_function_of = incidence_list
 V_81.has_function.append( F_76 )
+incidence_list = []
+incidence_list.append( V_81 )
+incidence_list.append( V_3 )
+F_ID = "F_80"
+F_80 = onto.function( F_ID )
+F_80.is_function_of = incidence_list
+V_81.has_function.append( F_80 )
 #82
 
 V_82.has_function = []
@@ -2204,6 +2218,12 @@ F_ID = "F_77"
 F_77 = onto.function( F_ID )
 F_77.is_function_of = incidence_list
 V_82.has_function.append( F_77 )
+incidence_list = []
+incidence_list.append( V_82 )
+F_ID = "F_81"
+F_81 = onto.function( F_ID )
+F_81.is_function_of = incidence_list
+V_82.has_function.append( F_81 )
 #83
 
 V_83.has_function = []
@@ -2215,5 +2235,12 @@ F_ID = "F_78"
 F_78 = onto.function( F_ID )
 F_78.is_function_of = incidence_list
 V_83.has_function.append( F_78 )
+incidence_list = []
+incidence_list.append( V_83 )
+incidence_list.append( V_3 )
+F_ID = "F_82"
+F_82 = onto.function( F_ID )
+F_82.is_function_of = incidence_list
+V_83.has_function.append( F_82 )
 
 onto.save("variables.owl")

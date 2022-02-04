@@ -358,5 +358,29 @@
     "lhs": "fy_B_delta_m",
     "network": "System",
     "rhs": "np.dot(np.transpose(np.multiply(np.transpose(K_B_delta), D)), pi_B_delta)"
+  },
+  "79": {
+    "variable_ID": 80,
+    "lhs": "fx_A_alpha_m",
+    "network": "System",
+    "rhs": "np.ones(np.shape(fx_A_alpha_m)), value"
+  },
+  "80": {
+    "variable_ID": 81,
+    "lhs": "fx_A_beta_m",
+    "network": "System",
+    "rhs": "np.ones(np.shape(fx_A_beta_m)), value"
+  },
+  "81": {
+    "variable_ID": 82,
+    "lhs": "fy_B_gamma_m",
+    "network": "System",
+    "rhs": "np.ones(np.shape(fy_B_gamma_m)), -"
+  },
+  "82": {
+    "variable_ID": 83,
+    "lhs": "fy_B_delta_m",
+    "network": "System",
+    "rhs": "np.ones(np.shape(fy_B_delta_m)), value"
   }
 }

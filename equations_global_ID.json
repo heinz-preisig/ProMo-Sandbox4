@@ -333,7 +333,7 @@
     "variable_ID": 76,
     "lhs": " V_76",
     "network": "Control >>> System",
-    "rhs": " V_67"
+    "rhs": " V_10"
   },
   "75": {
     "variable_ID": 80,
@@ -358,5 +358,29 @@
     "lhs": " V_83",
     "network": "System",
     "rhs": " V_16 O_4 V_36  O_5  I_1 O_5  V_24"
+  },
+  "79": {
+    "variable_ID": 80,
+    "lhs": " V_80",
+    "network": "System",
+    "rhs": " O_11 D_0 V_80 D_7 V_3 D_1"
+  },
+  "80": {
+    "variable_ID": 81,
+    "lhs": " V_81",
+    "network": "System",
+    "rhs": " O_11 D_0 V_81 D_7 V_3 D_1"
+  },
+  "81": {
+    "variable_ID": 82,
+    "lhs": " V_82",
+    "network": "System",
+    "rhs": " O_11 D_0 V_82 D_7- D_1"
+  },
+  "82": {
+    "variable_ID": 83,
+    "lhs": " V_83",
+    "network": "System",
+    "rhs": " O_11 D_0 V_83 D_7 V_3 D_1"
   }
 }
