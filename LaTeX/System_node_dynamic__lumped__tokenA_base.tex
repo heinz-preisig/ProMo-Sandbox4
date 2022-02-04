@@ -74,32 +74,32 @@
 
 \renewcommand{\arraystretch}{1.5}
 
-\begin{longtable}{|p{1cm}|p{1cm}|p{1cm}|p{8cm}|p{12cm}|}\hline
-  no &var &equ &quations &token\\\hline\hline
+\begin{longtable}{|p{1cm}|p{1cm}|p{1cm}|p{10cm}|p{4cm}|p{4cm}|}\hline
+  no &var &equ &quations &N &A\\\hline\hline
 \endhead
 \hline \multicolumn{3}{r}{\textit{Continued on next page}} \\
 \endfoot
 \hline
 \endlastfoot
-18 &18 &- &\begin{eq}{{M^{A,\beta}}}{_{N}} :: \text{port variable}\end{eq} & \\
-17 &17 &- &\begin{eq}{{M^{A,\alpha}}}{_{N}} :: \text{port variable}\end{eq} & \\
-16 &14 &- &\begin{eq}{{K^{A,\beta}}}{_{A}} :: \text{port variable}\end{eq} & \\
-15 &3 &- &\begin{eq}{{\#}}{_{}} :: \text{port variable}\end{eq} & \\
-14 &36 &- &\begin{eq}{D}{_{N, A}} :: \text{port variable}\end{eq} & \\
-13 &13 &- &\begin{eq}{{K^{A,\alpha}}}{_{A}} :: \text{port variable}\end{eq} & \\
-12 &8 &- &\begin{eq}{F}{_{N, A}} :: \text{port variable}\end{eq} & \\
-11 &1 &- &\begin{eq}{t}{_{}} :: \text{port variable}\end{eq} & \\
-10 &22 &8 &\begin{eq}{{\pi^{A,\beta}}}{_{N}} := {{M^{A,\beta}}}{_{N}} \, . \, {x}{_{N}}\end{eq} & \\
-9 &76 &63 &\begin{eq}{u}{_{A}} := \text{Instantiate}({u}{_{A}}, {{\#}}{_{}})\end{eq} & \\
-8 &21 &7 &\begin{eq}{{\pi^{A,\alpha}}}{_{N}} := {{M^{A,\alpha}}}{_{N}} \, . \, {x}{_{N}}\end{eq} & \\
-7 &81 &76 &\begin{eq}{{\hat{x}^{A,\beta}}}{_{A}} := {{K^{A,\beta}}}{_{A}} \, . \, {D}{_{N, A}} \stackrel{N}{\,\star\,} {{\pi^{A,\beta}}}{_{N}}\end{eq} & \\
-6 &81 &80 &\begin{eq}{{\hat{x}^{A,\beta}}}{_{A}} := \text{Instantiate}({{\hat{x}^{A,\beta}}}{_{A}}, {{\#}}{_{}})\end{eq} & \\
-5 &80 &79 &\begin{eq}{{\hat{x}^{A,\alpha}}}{_{A}} := \text{Instantiate}({{\hat{x}^{A,\alpha}}}{_{A}}, {{\#}}{_{}})\end{eq} & \\
-4 &80 &75 &\begin{eq}{{\hat{x}^{A,\alpha}}}{_{A}} := {u}{_{A}} \, . \, {{K^{A,\alpha}}}{_{A}} \, . \, {D}{_{N, A}} \stackrel{N}{\,\star\,} {{\pi^{A,\alpha}}}{_{N}}\end{eq} & \\
-3 &26 &12 &\begin{eq}{{\hat{x}^{A,\beta}}}{_{N}} := {F}{_{N, A}} \stackrel{A}{\,\star\,} {{\hat{x}^{A,\beta}}}{_{A}}\end{eq} & \\
-2 &25 &11 &\begin{eq}{{\hat{x}^{A,\alpha}}}{_{N}} := {F}{_{N, A}} \stackrel{A}{\,\star\,} {{\hat{x}^{A,\alpha}}}{_{A}}\end{eq} & \\
-1 &29 &16 &\begin{eq}{{\dot{x}}}{_{N}} := {{\hat{x}^{A,\alpha}}}{_{N}}  + {{\hat{x}^{A,\beta}}}{_{N}}\end{eq} & \\
-0 &9 &20 &\begin{eq}{x}{_{N}} := \int_{ {{t_o}}{_{}} }^{ {{t_e}}{_{}} } \, {{\dot{x}}}{_{N}} \enskip d\,{t}{_{}}  + {{x^o}}{_{N}}\end{eq} & \\
+18 &18 &- &\begin{eq}{{M^{A,\beta}}}{_{N}} :: \text{port variable}\end{eq} & & \\
+17 &17 &- &\begin{eq}{{M^{A,\alpha}}}{_{N}} :: \text{port variable}\end{eq} & & \\
+16 &14 &- &\begin{eq}{{K^{A,\beta}}}{_{A}} :: \text{port variable}\end{eq} & &\\
+15 &3 &- &\begin{eq}{{\#}}{_{}} :: \text{port variable}\end{eq} & &\\
+14 &36 &- &\begin{eq}{D}{_{N, A}} :: \text{port variable}\end{eq} & &\\
+13 &13 &- &\begin{eq}{{K^{A,\alpha}}}{_{A}} :: \text{port variable}\end{eq} & & \\ 
+12 &8 &- &\begin{eq}{F}{_{N, A}} :: \text{port variable}\end{eq} & & \\ 
+11 &1 &- &\begin{eq}{t}{_{}} :: \text{port variable}\end{eq} & & \\ 
+10 &22 &8 &\begin{eq}{{\pi^{A,\beta}}}{_{N}} := {{M^{A,\beta}}}{_{N}} \, . \, {x}{_{N}}\end{eq} & & \\ 
+9 &76 &63 &\begin{eq}{u}{_{A}} := \text{Instantiate}({u}{_{A}}, {{\#}}{_{}})\end{eq} & & \\ 
+8 &21 &7 &\begin{eq}{{\pi^{A,\alpha}}}{_{N}} := {{M^{A,\alpha}}}{_{N}} \, . \, {x}{_{N}}\end{eq} & & \\ 
+7 &81 &76 &\begin{eq}{{\hat{x}^{A,\beta}}}{_{A}} := {{K^{A,\beta}}}{_{A}} \, . \, {D}{_{N, A}} \stackrel{N}{\,\star\,} {{\pi^{A,\beta}}}{_{N}}\end{eq} & & \\ 
+6 &81 &80 &\begin{eq}{{\hat{x}^{A,\beta}}}{_{A}} := \text{Instantiate}({{\hat{x}^{A,\beta}}}{_{A}}, {{\#}}{_{}})\end{eq} & & \\ 
+5 &80 &79 &\begin{eq}{{\hat{x}^{A,\alpha}}}{_{A}} := \text{Instantiate}({{\hat{x}^{A,\alpha}}}{_{A}}, {{\#}}{_{}})\end{eq} & & \\ 
+4 &80 &75 &\begin{eq}{{\hat{x}^{A,\alpha}}}{_{A}} := {u}{_{A}} \, . \, {{K^{A,\alpha}}}{_{A}} \, . \, {D}{_{N, A}} \stackrel{N}{\,\star\,} {{\pi^{A,\alpha}}}{_{N}}\end{eq} & & \\ 
+3 &26 &12 &\begin{eq}{{\hat{x}^{A,\beta}}}{_{N}} := {F}{_{N, A}} \stackrel{A}{\,\star\,} {{\hat{x}^{A,\beta}}}{_{A}}\end{eq} & & \\ 
+2 &25 &11 &\begin{eq}{{\hat{x}^{A,\alpha}}}{_{N}} := {F}{_{N, A}} \stackrel{A}{\,\star\,} {{\hat{x}^{A,\alpha}}}{_{A}}\end{eq} & & \\ 
+1 &29 &16 &\begin{eq}{{\dot{x}}}{_{N}} := {{\hat{x}^{A,\alpha}}}{_{N}}  + {{\hat{x}^{A,\beta}}}{_{N}}\end{eq} & & \\ 
+0 &9 &20 &\begin{eq}{x}{_{N}} := \int_{ {{t_o}}{_{}} }^{ {{t_e}}{_{}} } \, {{\dot{x}}}{_{N}} \enskip d\,{t}{_{}}  + {{x^o}}{_{N}}\end{eq} & & \\ 
 
 \end{longtable}
 
