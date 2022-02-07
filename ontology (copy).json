@@ -1,0 +1,228 @@
+{
+  "interfaces": {},
+  "ontology_tree": {
+    "Control": {
+      "behaviour": {
+        "arc": [
+          "controlOut",
+          "link",
+          "measureIn"
+        ],
+        "graph": [
+          "network"
+        ],
+        "node": [
+          "frame",
+          "state",
+          "constant",
+          "differentialState"
+        ]
+      },
+      "children": [],
+      "name": "Control",
+      "parents": [
+        "root"
+      ],
+      "structure": {
+        "arc": {
+          "signal": {
+            "link": [
+              "unidirectional"
+            ]
+          }
+        },
+        "node": {
+          "constant": [
+            "lumped"
+          ],
+          "dynamic": [
+            "lumped"
+          ],
+          "event": [
+            "lumped"
+          ]
+        },
+        "token": {
+          "signal": []
+        }
+      },
+      "type": "inter"
+    },
+    "Properties": {
+      "behaviour": {
+        "arc": [],
+        "graph": [
+          "network"
+        ],
+        "node": [
+          "frame",
+          "state",
+          "constant",
+          "differentialState",
+          "propertyOut"
+        ]
+      },
+      "children": [],
+      "name": "Properties",
+      "parents": [
+        "root"
+      ],
+      "structure": {
+        "arc": {
+          "tokenA": {},
+          "tokenB": {}
+        },
+        "node": {
+          "constant": [
+            "lumped"
+          ],
+          "dynamic": [
+            "lumped"
+          ],
+          "event": [
+            "lumped"
+          ]
+        },
+        "token": {
+          "tokenA": [],
+          "tokenB": []
+        }
+      },
+      "type": "inter"
+    },
+    "System": {
+      "behaviour": {
+        "arc": [
+          "controlIn",
+          "measureOut",
+          "transport"
+        ],
+        "graph": [
+          "network",
+          "differenceOperator"
+        ],
+        "node": [
+          "frame",
+          "state",
+          "constant",
+          "differentialState",
+          "secondaryState",
+          "propertyIn"
+        ]
+      },
+      "children": [],
+      "name": "System",
+      "parents": [
+        "root"
+      ],
+      "structure": {
+        "arc": {
+          "tokenA": {
+            "mechanismA": [
+              "lumped"
+            ],
+            "mechanismB": [
+              "lumped"
+            ]
+          },
+          "tokenB": {
+            "mechanismC": [
+              "lumped"
+            ],
+            "mechanismD": [
+              "lumped"
+            ]
+          }
+        },
+        "node": {
+          "constant": [
+            "lumped"
+          ],
+          "dynamic": [
+            "lumped"
+          ],
+          "event": [
+            "lumped"
+          ]
+        },
+        "token": {
+          "tokenA": [
+            "molecule"
+          ],
+          "tokenB": []
+        }
+      },
+      "type": "inter"
+    },
+    "root": {
+      "behaviour": {
+        "arc": [],
+        "graph": [
+          "network"
+        ],
+        "node": [
+          "frame",
+          "state",
+          "constant",
+          "differentialState"
+        ]
+      },
+      "children": [
+        "Properties",
+        "Control",
+        "System"
+      ],
+      "name": "root",
+      "parents": [],
+      "structure": {
+        "arc": {},
+        "node": {
+          "constant": [
+            "lumped"
+          ],
+          "dynamic": [
+            "lumped"
+          ],
+          "event": [
+            "lumped"
+          ]
+        },
+        "token": {}
+      },
+      "type": "inter"
+    }
+  },
+  "rules": {
+    "network_enable_adding_indices": {
+      "Control": false,
+      "Properties": false,
+      "System": false,
+      "root": false,
+      "system": false
+    },
+    "nodes_allowing_token_conversion": [
+      "dynamic",
+      "event"
+    ],
+    "nodes_allowing_token_injection": [
+      "constant"
+    ],
+    "nodes_allowing_token_transfer": [
+      "intraface"
+    ],
+    "numerical_value": "value",
+    "variable_classes_being_state_variables": [],
+    "variable_classes_having_port_variables": [
+      "constant",
+      "controlIn",
+      "differenceOperator",
+      "frame",
+      "measureIn",
+      "network",
+      "propertyIn",
+      "propertyOut",
+      "state"
+    ]
+  },
+  "version": "3"
+}
