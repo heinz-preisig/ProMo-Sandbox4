@@ -74,6 +74,7 @@
 
 \renewcommand{\arraystretch}{1.5}
 
+
 \begin{longtable}{|p{1cm}|p{1cm}|p{1cm}|p{10cm}|p{4cm}|p{4cm}|}\hline
 	no &var &equ &quations &N &A\\\hline\hline
 \endhead
@@ -81,24 +82,26 @@
 \endfoot
 \hline
 \endlastfoot
-17 &20 &- &\begin{eq}{{M^{B,\delta}}}{_{N}} :: \text{port variable}\end{eq} & & \\ 
-16 &19 &- &\begin{eq}{{M^{B,\gamma}}}{_{N}} :: \text{port variable}\end{eq} & & \\ 
-15 &16 &- &\begin{eq}{{K^{B,\delta}}}{_{A}} :: \text{port variable}\end{eq} & & \\ 
-14 &3 &- &\begin{eq}{{\#}}{_{}} :: \text{port variable}\end{eq} & & \\ 
-13 &36 &- &\begin{eq}{D}{_{N, A}} :: \text{port variable}\end{eq} & & \\ 
-12 &15 &- &\begin{eq}{{K^{B,\gamma}}}{_{A}} :: \text{port variable}\end{eq} & & \\ 
-11 &8 &- &\begin{eq}{F}{_{N, A}} :: \text{port variable}\end{eq} & & \\ 
-10 &1 &- &\begin{eq}{t}{_{}} :: \text{port variable}\end{eq} & & \\ 
-9 &24 &10 &\begin{eq}{{\pi^{B,\delta}}}{_{N}} := {{M^{B,\delta}}}{_{N}} \, . \, {y}{_{N}}\end{eq} & & \\ 
-8 &23 &9 &\begin{eq}{{\pi^{B,\gamma}}}{_{N}} := {{M^{B,\gamma}}}{_{N}} \, . \, {y}{_{N}}\end{eq} & & \\ 
-7 &83 &78 &\begin{eq}{{\hat{y}^{B,\delta}}}{_{A}} := {{K^{B,\delta}}}{_{A}} \, . \, {D}{_{N, A}} \stackrel{N}{\,\star\,} {{\pi^{B,\delta}}}{_{N}}\end{eq} & & \\ 
-6 &83 &82 &\begin{eq}{{\hat{y}^{B,\delta}}}{_{A}} := \text{Instantiate}({{\hat{y}^{B,\delta}}}{_{A}}, {{\#}}{_{}})\end{eq} & & \\ 
-5 &82 &77 &\begin{eq}{{\hat{y}^{B,\gamma}}}{_{A}} := {{K^{B,\gamma}}}{_{A}} \, . \, {D}{_{N, A}} \stackrel{N}{\,\star\,} {{\pi^{B,\gamma}}}{_{N}}\end{eq} & & \\ 
-4 &82 &81 &\begin{eq}{{\hat{y}^{B,\gamma}}}{_{A}} := \text{Instantiate}({{\hat{y}^{B,\gamma}}}{_{A}}, -)\end{eq} & & \\ 
-3 &28 &15 &\begin{eq}{{\hat{y}^{B,\delta}}}{_{N}} := {F}{_{N, A}} \stackrel{A}{\,\star\,} {{\hat{y}^{B,\delta}}}{_{A}}\end{eq} & & \\ 
-2 &27 &14 &\begin{eq}{{\hat{y}^{B,\gamma}}}{_{N}} := {F}{_{N, A}} \stackrel{A}{\,\star\,} {{\hat{y}^{B,\gamma}}}{_{A}}\end{eq} & & \\ 
-1 &30 &17 &\begin{eq}{{\dot{y}}}{_{N}} := {{\hat{y}^{B,\gamma}}}{_{N}}  + {{\hat{y}^{B,\delta}}}{_{N}}\end{eq} & & \\ 
-0 &10 &21 &\begin{eq}{y}{_{N}} := \int_{ {{t_o}}{_{}} }^{ {{t_e}}{_{}} } \, {{\dot{y}}}{_{N}} \enskip d\,{t}{_{}}  + {{y^o}}{_{N}}\end{eq} & & \\ 
+19 &20 &- &\begin{eq}{{M^{B,\delta}}}{_{N}} :: \text{port variable}\end{eq} & & \\ \hline
+18 &19 &- &\begin{eq}{{M^{B,\gamma}}}{_{N}} :: \text{port variable}\end{eq} & & \\ \hline
+17 &16 &- &\begin{eq}{{K^{B,\delta}}}{_{A}} :: \text{port variable}\end{eq} & & \\ \hline
+16 &3 &- &\begin{eq}{{\#}}{_{}} :: \text{port variable}\end{eq} & & \\ \hline
+15 &36 &- &\begin{eq}{D}{_{N, A}} :: \text{port variable}\end{eq} & & \\ \hline
+14 &15 &- &\begin{eq}{{K^{B,\gamma}}}{_{A}} :: \text{port variable}\end{eq} & & \\ \hline
+13 &8 &- &\begin{eq}{F}{_{N, A}} :: \text{port variable}\end{eq} & & \\ \hline
+12 &1 &- &\begin{eq}{t}{_{}} :: \text{port variable}\end{eq} & & \\ \hline
+11 &24 &30 &\begin{eq}{{\pi^{B,\delta}}}{_{N}} := \text{Instantiate}({{\pi^{B,\delta}}}{_{N}}, {{\#}}{_{}})\end{eq} & & \\ \hline
+10 &24 &10 &\begin{eq}{{\pi^{B,\delta}}}{_{N}} := {{M^{B,\delta}}}{_{N}} \, . \, {y}{_{N}}\end{eq} & & \\ \hline
+9 &23 &29 &\begin{eq}{{\pi^{B,\gamma}}}{_{N}} := \text{Instantiate}({{\pi^{B,\gamma}}}{_{N}}, {{\#}}{_{}})\end{eq} & & \\ \hline
+8 &23 &9 &\begin{eq}{{\pi^{B,\gamma}}}{_{N}} := {{M^{B,\gamma}}}{_{N}} \, . \, {y}{_{N}}\end{eq} & & \\ \hline
+7 &83 &78 &\begin{eq}{{\hat{y}^{B,\delta}}}{_{A}} := {{K^{B,\delta}}}{_{A}} \, . \, {D}{_{N, A}} \stackrel{N}{\,\star\,} {{\pi^{B,\delta}}}{_{N}}\end{eq} & & \\ \hline
+6 &83 &82 &\begin{eq}{{\hat{y}^{B,\delta}}}{_{A}} := \text{Instantiate}({{\hat{y}^{B,\delta}}}{_{A}}, {{\#}}{_{}})\end{eq} & & \\ \hline
+5 &82 &77 &\begin{eq}{{\hat{y}^{B,\gamma}}}{_{A}} := {{K^{B,\gamma}}}{_{A}} \, . \, {D}{_{N, A}} \stackrel{N}{\,\star\,} {{\pi^{B,\gamma}}}{_{N}}\end{eq} & & \\ \hline
+4 &82 &81 &\begin{eq}{{\hat{y}^{B,\gamma}}}{_{A}} := \text{Instantiate}({{\hat{y}^{B,\gamma}}}{_{A}}, -)\end{eq} & & \\ \hline
+3 &28 &15 &\begin{eq}{{\hat{y}^{B,\delta}}}{_{N}} := {F}{_{N, A}} \stackrel{A}{\,\star\,} {{\hat{y}^{B,\delta}}}{_{A}}\end{eq} & & \\ \hline
+2 &27 &14 &\begin{eq}{{\hat{y}^{B,\gamma}}}{_{N}} := {F}{_{N, A}} \stackrel{A}{\,\star\,} {{\hat{y}^{B,\gamma}}}{_{A}}\end{eq} & & \\ \hline
+1 &30 &17 &\begin{eq}{{\dot{y}}}{_{N}} := {{\hat{y}^{B,\gamma}}}{_{N}}  + {{\hat{y}^{B,\delta}}}{_{N}}\end{eq} & & \\ \hline
+0 &10 &21 &\begin{eq}{y}{_{N}} := \int_{ {{t_o}}{_{}} }^{ {{t_e}}{_{}} } \, {{\dot{y}}}{_{N}} \enskip d\,{t}{_{}}  + {{y^o}}{_{N}}\end{eq} & & \\ \hline
 
 \end{longtable}
 

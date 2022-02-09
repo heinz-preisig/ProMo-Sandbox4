@@ -622,7 +622,8 @@
             0
           ],
           "children": [
-            26
+            26,
+            27
           ]
         },
         "18": {
@@ -650,7 +651,7 @@
             0
           ],
           "children": [
-            28
+            29
           ]
         },
         "20": {
@@ -732,7 +733,8 @@
             0
           ],
           "children": [
-            29
+            30,
+            32
           ]
         },
         "26": {
@@ -747,13 +749,10 @@
             1,
             0
           ],
-          "children": [
-            27
-          ]
+          "children": []
         },
         "27": {
           "ancestors": [
-            26,
             17,
             15,
             12,
@@ -764,11 +763,14 @@
             1,
             0
           ],
-          "children": []
+          "children": [
+            28
+          ]
         },
         "28": {
           "ancestors": [
-            19,
+            27,
+            17,
             15,
             12,
             10,
@@ -782,6 +784,20 @@
         },
         "29": {
           "ancestors": [
+            19,
+            15,
+            12,
+            10,
+            8,
+            7,
+            4,
+            1,
+            0
+          ],
+          "children": []
+        },
+        "30": {
+          "ancestors": [
             25,
             23,
             14,
@@ -793,12 +809,26 @@
             0
           ],
           "children": [
-            30
+            31
           ]
         },
-        "30": {
+        "31": {
           "ancestors": [
-            29,
+            30,
+            25,
+            23,
+            14,
+            13,
+            9,
+            7,
+            4,
+            1,
+            0
+          ],
+          "children": []
+        },
+        "32": {
+          "ancestors": [
             25,
             23,
             14,
@@ -839,11 +869,13 @@
         "23": "equation_76",
         "24": "variable_14",
         "25": "variable_22",
-        "26": "equation_7",
-        "27": "variable_17",
-        "28": "equation_63",
-        "29": "equation_8",
-        "30": "variable_18"
+        "26": "equation_27",
+        "27": "equation_7",
+        "28": "variable_17",
+        "29": "equation_63",
+        "30": "equation_8",
+        "31": "variable_18",
+        "32": "equation_28"
       },
       "IDs": {
         "variable_9": 0,
@@ -872,14 +904,17 @@
         "equation_76": 23,
         "variable_14": 24,
         "variable_22": 25,
-        "equation_7": 26,
-        "variable_17": 27,
-        "equation_63": 28,
-        "equation_8": 29,
-        "variable_18": 30
+        "equation_27": 26,
+        "equation_7": 27,
+        "variable_17": 28,
+        "equation_63": 29,
+        "equation_8": 30,
+        "variable_18": 31,
+        "equation_28": 32
       },
       "root_variable": 9,
       "blocked": [
+        32,
         2,
         67,
         68,
@@ -888,9 +923,6 @@
         3,
         4,
         5,
-        27,
-        28,
-        32,
         62
       ],
       "buddies": [],
@@ -1112,7 +1144,8 @@
             0
           ],
           "children": [
-            25
+            25,
+            27
           ]
         },
         "19": {
@@ -1195,7 +1228,8 @@
             0
           ],
           "children": [
-            27
+            28,
+            30
           ]
         },
         "25": {
@@ -1231,6 +1265,20 @@
         },
         "27": {
           "ancestors": [
+            18,
+            16,
+            12,
+            10,
+            8,
+            7,
+            4,
+            1,
+            0
+          ],
+          "children": []
+        },
+        "28": {
+          "ancestors": [
             24,
             22,
             14,
@@ -1242,12 +1290,26 @@
             0
           ],
           "children": [
-            28
+            29
           ]
         },
-        "28": {
+        "29": {
           "ancestors": [
-            27,
+            28,
+            24,
+            22,
+            14,
+            13,
+            9,
+            7,
+            4,
+            1,
+            0
+          ],
+          "children": []
+        },
+        "30": {
+          "ancestors": [
             24,
             22,
             14,
@@ -1289,8 +1351,10 @@
         "24": "variable_24",
         "25": "equation_9",
         "26": "variable_19",
-        "27": "equation_10",
-        "28": "variable_20"
+        "27": "equation_29",
+        "28": "equation_10",
+        "29": "variable_20",
+        "30": "equation_30"
       },
       "IDs": {
         "variable_10": 0,
@@ -1320,11 +1384,14 @@
         "variable_24": 24,
         "equation_9": 25,
         "variable_19": 26,
-        "equation_10": 27,
-        "variable_20": 28
+        "equation_29": 27,
+        "equation_10": 28,
+        "variable_20": 29,
+        "equation_30": 30
       },
       "root_variable": 10,
       "blocked": [
+        33,
         2,
         67,
         68,
@@ -1333,9 +1400,6 @@
         3,
         4,
         6,
-        29,
-        30,
-        33,
         62
       ],
       "buddies": [],
