@@ -29,7 +29,9 @@
             "link": [
               "unidirectional"
             ]
-          }
+          },
+          "tokenA": {},
+          "tokenB": {}
         },
         "node": {
           "constant": [
@@ -43,7 +45,9 @@
           ]
         },
         "token": {
-          "signal": []
+          "signal": [],
+          "tokenA": [],
+          "tokenB": []
         }
       },
       "type": "inter"
@@ -117,22 +121,8 @@
       ],
       "structure": {
         "arc": {
-          "tokenA": {
-            "mechanismA": [
-              "lumped"
-            ],
-            "mechanismB": [
-              "lumped"
-            ]
-          },
-          "tokenB": {
-            "mechanismC": [
-              "lumped"
-            ],
-            "mechanismD": [
-              "lumped"
-            ]
-          }
+          "tokenA": {},
+          "tokenB": {}
         },
         "node": {
           "constant": [
@@ -146,9 +136,7 @@
           ]
         },
         "token": {
-          "tokenA": [
-            "molecule"
-          ],
+          "tokenA": [],
           "tokenB": []
         }
       },
@@ -175,7 +163,10 @@
       "name": "root",
       "parents": [],
       "structure": {
-        "arc": {},
+        "arc": {
+          "tokenA": {},
+          "tokenB": {}
+        },
         "node": {
           "constant": [
             "lumped"
@@ -187,7 +178,10 @@
             "lumped"
           ]
         },
-        "token": {}
+        "token": {
+          "tokenA": [],
+          "tokenB": []
+        }
       },
       "type": "inter"
     }
